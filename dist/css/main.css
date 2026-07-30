@@ -877,14 +877,14 @@ nav .sidebar a {
 .our-story .content {
   width: 100%;
   aspect-ratio: 1282/857;
-  background: url("../../assets/images/story_bg.jpg") no-repeat top/cover;
-  color: #f2dfc2;
-  position: relative;
+  color: #592815;
   display: flex;
   justify-content: end;
   flex-direction: column;
   text-align: left;
   padding: 2% 5%;
+  position: relative;
+  z-index: 1;
 }
 .our-story .content .title {
   font-family: "AstonScriptBold-Bold", sans-serif;
@@ -927,6 +927,15 @@ nav .sidebar a {
 .our-story .content .group-img img.couple-4 {
   top: 15%;
 }
+.our-story .content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(255, 248, 235, 0.7), rgba(255, 246, 229, 0.7)), url("../../assets/images/story_bg.jpg") no-repeat top/cover;
+  opacity: 0.9;
+  transform: scale(1.1);
+  z-index: 0;
+}
 
 .lookbook {
   width: 100%;
@@ -939,7 +948,7 @@ nav .sidebar a {
 .lookbook .content .title {
   font-family: "AstonScriptBold-Bold", sans-serif;
   font-size: 52px;
-  margin: 5%;
+  margin: 10% 0 8%;
 }
 .lookbook .content .slider-box .swiper {
   width: 85%;

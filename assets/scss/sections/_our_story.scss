@@ -7,14 +7,14 @@
     .content {
         width: 100%;
         aspect-ratio: 1282 / 857;
-        background: url('../../assets/images/story_bg.jpg') no-repeat top / cover;
-        color: #f2dfc2ff;
-        position: relative;
+        color: $text-color;
         display: flex;
         justify-content: end;
         flex-direction: column;
         text-align: left;
         padding: 2% 5%;
+        position: relative;
+        z-index: 1;
 
         .title {
             font-family: $font-AstonScriptBold;
@@ -66,5 +66,17 @@
             }
         }
 
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(rgba(255, 248, 235, 0.7), rgba(255, 246, 229, 0.7)),
+                url('../../assets/images/story_bg.jpg') no-repeat top / cover;
+            // filter: blur(2px) brightness(0.5);
+            // background-color: rgb(254, 253, 251);
+            opacity: .9;
+            transform: scale(1.1);
+            z-index: 0;
+        }
     }
 }
