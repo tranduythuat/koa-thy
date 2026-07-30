@@ -1,0 +1,53 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.our-story {
+    width: 100%;
+
+    .content {
+        width: 100%;
+        aspect-ratio: 1282 / 857;
+        background: url('../../assets/images/story_bg.png') no-repeat center / cover;
+        color: #f2dfc2ff;
+        position: relative;
+
+        .title {
+            font-family: $font-AstonScriptBold;
+            font-size: 195px;
+            line-height: 2;
+        }
+
+        .text {
+            font-size: 19.7px;
+            max-width: 430px;
+            width: 100%;
+            text-align: justify;
+            margin-left: 10%;
+
+            p {
+                margin-bottom: 5%;
+            }
+        }
+
+        img {
+            position: absolute;
+            max-width: 280px;
+            border-style: solid;
+            border-width: 18px 20px 62px;
+            border-color: #f2efe7ff;
+
+            &.couple-1 {
+                transform: rotate(-10deg);
+                max-width: 320px;
+                bottom: 12%;
+                right: 23%;
+            }
+
+            &.couple-2 {
+                transform: rotate(5deg);
+                bottom: 5%;
+                right: 3%;
+            }
+        }
+    }
+}

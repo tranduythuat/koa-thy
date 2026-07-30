@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koa & Thy</title>
+  <meta property="og:title" content="Koa and Thy" />
+  <meta property="og:description" content="23.02.2027" />
+  <meta property="og:type" content="website" />
+
+  <meta property="og:image" content="" />
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="400" />
+
+  <link rel="stylesheet" href="dist/css/main.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
+    type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
+    type="text/css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <ul class="sidebar menu-items">
+        <li onclick="hideSidebar()" class="close-icon">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+            </svg></a>
+        </li>
+        <li><a href="#destination">THE DESTINATION</a></li>
+        <li><a href="#story">THE STORY</a></li>
+        <li><a href="#lookbook">THE LOOKBOOK</a></li>
+        <li><a href="#travel">THE TRAVEL GUIDE</a></li>
+        <li><a href="#before">BEFORE YOU ARRIVE</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+      </ul>
+      <ul class="menu-items">
+        <li class="hideOnMobile"><a href="#destination">THE <br>DESTINATION</a></li>
+        <li class="hideOnMobile"><a href="#story">THE <br> STORY</a></li>
+        <li class="hideOnMobile"><a href="#lookbook">THE <br> LOOKBOOK</a></li>
+        <li class="nav-logo"><a href="#"><img src="assets/images/logo.png" alt=""></a></li>
+        <li class="hideOnMobile"><a href="#travel">THE <br>TRAVEL GUIDE</a></li>
+        <li class="hideOnMobile"><a href="#before">BEFORE <br>YOU ARRIVE</a></li>
+        <li class="hideOnMobile"><a href="#rsvp">RSVP</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+              <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+            </svg></a>
+        </li>
+      </ul>
+    </nav>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+    <!-- HERO / COVER -->
+    <section class="hero">
+      <div class="content">
+        <img src="assets/images/text_img_01.png" class="text-img-01" alt="">
+      </div>
+    </section>
+
+    <section class="invite">
+      <div class="content">
+        <div class="logo">
+          <img src="assets/images/invite_logo.png" alt="">
+        </div>
+        <p class="eyebrow">INVITE YOU TO CELEBRATE</p>
+        <p class="eyebrow sub">THE WEDDING OF</p>
+
+        <h1 class="names">Koa and Thy</h1>
+
+        <div class="divider">
+          <img src="assets/images/divider.png" alt="">
+        </div>
+
+        <!-- Welcome Drinks -->
+        <p class="event-label">WELCOME DRINKS</p>
+        <p class="event-date">Monday 22nd February 2027</p>
+        <p class="event-time">19:30 - 21:00</p>
+        <p class="venue">Hẻm Hội An</p>
+        <a href="#" class="maps-btn">MAPS</a>
+
+        <div class="description">
+          <p>What to expect: A relaxed evening to settle in, catch up with familiar faces, meet a few new ones, and
+            raise a glass
+            before the big day.</p>
+          <p>White neutral casual attire is encouraged... think linen, cotton, and effortless holiday dressing.</p>
+        </div>
+
+        <div class="divider-02">
+          <img src="assets/images/divider.png" alt="">
+        </div>
+
+        <div class="section-gap">
+          <p class="event-label">THE CELEBRATION</p>
+          <p class="event-date">Tuesday 23rd February 2027</p>
+
+          <p class="venue">Palm Garden Hoi An</p>
+          <a href="#" class="maps-btn">MAPS</a>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline-badge">
+          <label for="">Timeline</label>
+          <img src="assets/images/timeline_outline.png" alt="">
+        </div>
+
+        <div class="timeline">
+          <div class="item">
+            <div class="icon">
+              <img src="assets/images/icons/gate.png" alt="">
+              <hr>
+            </div>
+            <div class="time">16:00</div>
+            <div class="name">Ceremony</div>
+          </div>
+          <div class="item">
+            <div class="icon">
+              <img src="assets/images/icons/cups.png" alt="">
+              <hr>
+            </div>
+            <div class="time">17:00</div>
+            <div class="name">Cocktail Hour</div>
+          </div>
+          <div class="item">
+            <div class="icon">
+              <img src="assets/images/icons/dinner.png" alt="">
+              <hr>
+            </div>
+            <div class="time">18:00</div>
+            <div class="name">Dinner</div>
+          </div>
+          <div class="item">
+            <div class="icon">
+              <img src="assets/images/icons/party.png" alt="">
+            </div>
+            <div class="time">21:30</div>
+            <div class="name">After Party</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="destination">
+      <div class="content">
+        <div class="top-img"></div>
+        <div class="main" id="destination">
+          <div class="box-1">
+            <div class="slider-box">
+              <div class="title">The Destination</div>
+              <div class="slider">
+                <div class="swiper main-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/destination/1.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/2.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/3.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/4.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/5.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/6.jpg" /></div>
+                  </div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+
+                <div class="swiper thumb-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/destination/1.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/2.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/3.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/4.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/5.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/6.jpg" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq-box" data-animate="fade-in">
+              <div class="faq-container">
+                <div class="faq-item active">
+                  <button class="faq-header">
+                    <span>WELCOME TO HOI AN</span>
+                    <span class="icon">−</span>
+                  </button>
+                  <div class="faq-content">
+                    <p>We've always believed the best celebrations bring
+                      people together around good food, beautiful places,
+                      and the ones they love most. We can't wait to share
+                      them with you.</p>
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-header">
+                    <span>WHY HERE</span>
+                    <span class="icon">−</span>
+                  </button>
+                  <div class="faq-content">
+                    <p>We've always believed the best celebrations bring
+                      people together around good food, beautiful places,
+                      and the ones they love most. We can't wait to share
+                      them with you.</p>
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-header">
+                    <span>THE SETTING</span>
+                    <span class="icon">−</span>
+                  </button>
+                  <div class="faq-content">
+                    <p>We've always believed the best celebrations bring
+                      people together around good food, beautiful places,
+                      and the ones they love most. We can't wait to share
+                      them with you.</p>
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-header">
+                    <span>FEBRUARY IN HOI AN</span>
+                    <span class="icon">−</span>
+                  </button>
+                  <div class="faq-content">
+                    <p>We've always believed the best celebrations bring
+                      people together around good food, beautiful places,
+                      and the ones they love most. We can't wait to share
+                      them with you.</p>
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-header">
+                    <span>GETTING HERE</span>
+                    <span class="icon">−</span>
+                  </button>
+                  <div class="faq-content">
+                    <p>We've always believed the best celebrations bring
+                      people together around good food, beautiful places,
+                      and the ones they love most. We can't wait to share
+                      them with you.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-2">
+            <hr>
+            <div class="subtext">THE WEDDING OF <span>Koa and Thy</span></div>
+            <div class="divider">
+              <img src="assets/images/divider_01.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-story" id="story">
+      <div class="content">
+        <div class="title">The Story</div>
+        <div class="text">
+          <p>It all began at a birthday party in Sydney in 2019.</p>
+          <p>A cancelled after-party turned into hours of
+            conversation by the beach, and the beginning
+            of everything that followed.</p>
+          <p>Since then, it's been road trips, sunset picnics,
+            concerts and festivals, adventures abroad,
+            and creating a home together in Sydney. In
+            January 2026, we returned to the lookout
+            where we'd watched one of our very first sun-
+            sets, and Koa got down on one knee.</p>
+          <p>Our next chapter continues in Hoi An, and we
+            can't wait to celebrate it with all of you.</p>
+        </div>
+
+        <img src="assets/images/TheStory/1.jpg" class="couple-1" alt="">
+        <img src="assets/images/TheStory/2.jpg" class="couple-2" alt="">
+      </div>
+    </section>
+
+    <section class="lookbook" id="lookbook">
+      <div class="content">
+        <div class="title">The Lookbook</div>
+        <div class="slider-box">
+          <div class="swiper lookbook-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/images/Lookbook/1.jpg"></div>
+              <div class="swiper-slide"><img src="assets/images/Lookbook/2.jpg"></div>
+              <div class="swiper-slide"><img src="assets/images/Lookbook/3.jpg"></div>
+              <div class="swiper-slide"><img src="assets/images/Lookbook/4.jpg"></div>
+              <div class="swiper-slide"><img src="assets/images/Lookbook/5.jpg"></div>
+              <div class="swiper-slide"><img src="assets/images/Lookbook/6.jpg"></div>
+              <div class="swiper-slide"><img src="assets/images/Lookbook/7.jpg"></div>
+              <div class="swiper-slide"><img src="assets/images/Lookbook/8.jpg"></div>
+              <div class="swiper-slide"><img src="assets/images/Lookbook/9.jpg"></div>
+              <div class="swiper-slide"><img src="assets/images/Lookbook/10.jpg"></div>
+            </div>
+          </div>
+        </div>
+        <div class="subtitle">FUNCKY FORMAL</div>
+        <div class="text">
+          <p>Colour is encouraged. Think vibrant colours, modern tailoring, statement silhouettes, and elevated
+            occasion wear. This is your excuse to wear that outfit you've been saving for something special.</p>
+          <p>Kindly avoid white, ivory and bridal shades.</p>
+        </div>
+        <div class="bottom-img"></div>
+      </div>
+    </section>
+
+    <section class="travel-guide" id="travel">
+      <div class="content">
+        <div class="divider">
+          <img src="assets/images/divider_02.png" alt="">
+        </div>
+        <div class="title">The Travel Guide</div>
+        <div class="divider-01">
+          <img src="assets/images/divider.png" alt="">
+        </div>
+        <div class="subtext">MAKE A HOLIDAY OF IT - HOI AN REWARDS A FEW EXTRA DAYS.</div>
+        <div class="guide">
+          <div class="faq-container">
+            <div class="faq-item active">
+              <button class="faq-header">
+                <span>STAY</span>
+                <span class="icon">−</span>
+              </button>
+              <div class="faq-content">
+                <p>Stay with us at Palm Garden Beach Resort & Spa for beachfront views, beautiful
+                  pools, and the convenience of being just steps from the celebrations. Prefer the
+                  charm of the Old Town? You'll find plenty of boutique hotels just 10–15 minutes
+                  away. As February is high season, we'd recommend booking early.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>EAT</span>
+                <span class="icon">−</span>
+              </button>
+              <div class="faq-content">
+                <p>We've always believed the best celebrations bring
+                  people together around good food, beautiful places,
+                  and the ones they love most. We can't wait to share
+                  them with you.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>DRINK</span>
+                <span class="icon">−</span>
+              </button>
+              <div class="faq-content">
+                <p>We've always believed the best celebrations bring
+                  people together around good food, beautiful places,
+                  and the ones they love most. We can't wait to share
+                  them with you.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>SPA</span>
+                <span class="icon">−</span>
+              </button>
+              <div class="faq-content">
+                <p>We've always believed the best celebrations bring
+                  people together around good food, beautiful places,
+                  and the ones they love most. We can't wait to share
+                  them with you.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>TAILORS</span>
+                <span class="icon">−</span>
+              </button>
+              <div class="faq-content">
+                <p>We've always believed the best celebrations bring
+                  people together around good food, beautiful places,
+                  and the ones they love most. We can't wait to share
+                  them with you.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>DO</span>
+                <span class="icon">−</span>
+              </button>
+              <div class="faq-content">
+                <p>We've always believed the best celebrations bring
+                  people together around good food, beautiful places,
+                  and the ones they love most. We can't wait to share
+                  them with you.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="note" id="before">
+      <div class="content">
+        <div class="logo">
+          <img src="assets/images/note_logo.png" alt="">
+        </div>
+        <div class="title">Before You Arrive</div>
+        <div class="subtext">Before you join us, we'd love you to think of your favourite (or funniest) memory of us,
+          and one piece of advice, wish, or something you'd like us to carry into this next chapter.</div>
+      </div>
+    </section>
+
+    <section class="rsvp" id="rsvp">
+      <div class="content">
+        <div class="title">Attendance confirmation</div>
+        <div class="subtext">WE'D LOVE TO KNOW BY 30 NOVEMBER 2026.</div>
+        <div class="divider">
+          <img src="assets/images/divider_03.png" alt="">
+        </div>
+        <form id="rsvpForm" class="rsvp-form">
+          <div class="form-group confirm">
+            <p class="subtitle">
+              Will you be attending the wedding?
+            </p>
+            <div class="button-group">
+              <div class="radio-wrapper">
+                <input type="radio" id="confirm-yes" name="confirm" value="Yes" checked />
+                <label for="confirm-yes" class="radio-label">
+                  YES
+                </label>
+              </div>
+              <div class="radio-wrapper">
+                <input type="radio" id="confirm-no" name="confirm" value="No" />
+                <label for="confirm-no" class="radio-label">
+                  NO
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group confirm-drink">
+            <p class="subtitle">
+              Will you be attending the welcome drinks?
+            </p>
+            <div class="button-group">
+              <div class="radio-wrapper">
+                <input type="radio" id="confirm-yes-drink" name="confirm_drink" value="Yes" checked />
+                <label for="confirm-yes-drink" class="radio-label">
+                  YES
+                </label>
+              </div>
+              <div class="radio-wrapper">
+                <input type="radio" id="confirm-no-drink" name="confirm_drink" value="No" />
+                <label for="confirm-no-drink" class="radio-label">
+                  NO
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group confirm-plus-joining">
+            <p class="subtitle">
+              Will your guest/plus one be joining you (if applicable)?
+            </p>
+            <div class="button-group">
+              <div class="radio-wrapper">
+                <input type="radio" id="confirm-yes-plus-joining" name="confirm_plus_joining" value="Yes" checked />
+                <label for="confirm-yes-plus-joining" class="radio-label">
+                  YES
+                </label>
+              </div>
+              <div class="radio-wrapper">
+                <input type="radio" id="confirm-no-plus-joining" name="confirm_plus_joining" value="No" />
+                <label for="confirm-no-plus-joining" class="radio-label">
+                  NO
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group dietary">
+            <p class="subtitle">
+              Dietary requirements?
+            </p>
+            <input type="text" id="dietary" name="dietary" placeholder="Type box" />
+          </div>
+          <div class="form-group confirm-plus-transport">
+            <p class="subtitle">
+              Will you require transport assistance from airport?
+            </p>
+            <div class="button-group">
+              <div class="radio-wrapper">
+                <input type="radio" id="confirm-yes-plus-transport" name="confirm_plus_transport" value="Yes" checked />
+                <label for="confirm-yes-plus-transport" class="radio-label">
+                  YES
+                </label>
+              </div>
+              <div class="radio-wrapper">
+                <input type="radio" id="confirm-no-plus-transport" name="confirm_plus_transport" value="No" />
+                <label for="confirm-no-plus-transport" class="radio-label">
+                  NO
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group song">
+            <p class="subtitle">
+              Your song request for the dance floor?
+            </p>
+            <input type="text" id="song" name="song" placeholder="Type box" />
+          </div>
+          <div class="form-group children">
+            <p class="subtitle">
+              Will you be bringing any children (and if so, how many)?
+            </p>
+            <input type="text" id="children" name="children" placeholder="Type box" />
+          </div>
+          <button type="submit" class="submit-btn" data-i18n="rsvp.submit">CONFIRM</button>
+        </form>
+
+        <div class="text">
+          <p>If you can't find the answer you're looking for, our wonderful wedding planner, Ý Như, is happy to help:
+            <br> <span>ynhu@gonweddingplanner.com</span> <br>
+            (GÒN Wedding Planner - she speaks English & Vietnamese).
+          </p>
+
+          <p>Thank you for making the journey to celebrate with us. Whether you're travelling from across town or <br>
+            across the world, your presence means more to us than we can say.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="assets/js/gsap-animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

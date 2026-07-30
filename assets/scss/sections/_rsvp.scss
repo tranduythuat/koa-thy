@@ -1,0 +1,370 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.rsvp {
+    width: 100%;
+
+    .content {
+        aspect-ratio: 1282 / 2380;
+        background: url('../../assets/images/end_bg.png') no-repeat bottom / contain,
+            url('../../assets/images/base_bg.png') repeat center / contain;
+        width: 100%;
+        perspective: 1000px;
+        position: relative;
+        padding: 5% 10% 0%;
+
+        .title {
+            font-family: $font-AstonScriptBold;
+            font-size: 54px;
+        }
+
+        .subtext {
+            font-size: 20px;
+            margin-top: 2%;
+        }
+
+        .text {
+            font-size: 21px;
+
+            span {
+                color: $secondary-color;
+            }
+
+            p {
+                margin-bottom: 5%;
+            }
+        }
+
+        .divider {
+            margin: 5% 0 8%;
+
+            img {
+                max-width: 181px;
+            }
+        }
+
+        .header {
+            padding: 5% 0;
+
+            .divider {
+                margin-bottom: 5%;
+
+                img {
+                    max-width: 42px;
+                }
+            }
+
+            .title {
+                font-size: 30px;
+                font-family: $font-AstonScriptBold;
+                line-height: .8;
+                margin-bottom: 5%;
+
+            }
+
+            i.title-vi {
+                display: block;
+                text-transform: unset;
+                font-family: $font-SVG-GothamLight;
+                font-size: 14px;
+                line-height: 2;
+                margin-bottom: 3%;
+            }
+
+            .subtext {
+                font-size: 14.5px;
+                margin-bottom: 5%;
+                text-align: justify;
+                text-align-last: center;
+                font-family: $font-SVG-gothamBook;
+            }
+
+            .subtext-vi {
+                display: block;
+                font-size: $font-SVG-GothamLight;
+                text-align: justify;
+                text-align-last: center;
+            }
+
+            hr {
+                margin: 5% 0 7%;
+            }
+        }
+
+        .rsvp-form {
+            display: block;
+
+            .divider {
+                margin: 11% 0;
+            }
+
+            .button-group {
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 10%;
+
+                .radio-wrapper {
+                    position: relative;
+                    margin-top: auto;
+                }
+
+                .radio-wrapper input[type="radio"] {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+
+                .radio-label {
+                    display: block;
+                    @include flex-center;
+                    padding: 2% 0;
+                    line-height: 1.2;
+                    border-radius: 14px;
+                    background: transparent;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    text-align: center;
+                    border: solid 2px $text-color;
+                    font-family: inherit;
+                    color: $text-color;
+                    font-size: 20px;
+
+                    span {
+                        font-family: $font-SVG-GothamLight;
+                        font-style: italic;
+                    }
+
+                    &:hover {
+                        background: $secondary-color;
+                        color: white;
+                    }
+                }
+
+                .radio-wrapper input[type="radio"]:checked+.radio-label {
+                    background: $secondary-color;
+                    color: white;
+                }
+            }
+
+            .form-group {
+                width: 100%;
+                margin-bottom: 2%;
+                position: relative;
+                font-size: 10px;
+                display: flex;
+                justify-content: space-between;
+
+                .subtitle {
+                    width: 55%;
+                    font-size: 20px;
+                    text-transform: initial;
+                    // margin-bottom: 3%;
+                    font-family: inherit;
+                    text-align: left;
+                    border-bottom: 2px solid $text-color;
+                    line-height: 2;
+                }
+
+                .button-group,
+                input[type="text"] {
+                    width: 40%;
+                }
+
+                input[type="text"],
+                input[type="number"],
+                textarea {
+                    font-family: inherit;
+                    width: 40%;
+                    padding: 1%;
+                    border-radius: 16px;
+                    background: transparent;
+                    outline: none;
+                    border: solid 2px $text-color;
+                    line-height: 1;
+                    transition: border-color 0.3s ease;
+                    color: #7f6b64ff;
+                    background-color: transparent;
+                    font-size: 17px;
+                    font-family: $font-SVG-GothamLight;
+                }
+
+                input[type="text"]:focus,
+                input[type="number"]:focus,
+                textarea:focus {
+                    outline: none;
+                }
+
+                input[type="text"]::placeholder,
+                textarea::placeholder {
+                    color: #7f6b64ff;
+                    font-style: italic;
+                }
+
+                textarea#message {
+                    aspect-ratio: 8 / 2;
+                    resize: vertical;
+                    padding: 2% 4%;
+                    border-radius: 15px;
+                }
+
+                textarea#guest-names {
+                    aspect-ratio: 9 / 1;
+                    resize: vertical;
+                    padding: 2% 4%;
+                    border-radius: 15px;
+                }
+
+
+                textarea::placeholder {
+                    white-space: pre-line;
+                    /* Cho phép hiển thị xuống dòng trong placeholder */
+                }
+
+                // &.confirm {
+                //     margin-bottom: 8%;
+
+                //     .button-group {
+                //         display: block;
+                //         grid-template-columns: auto;
+
+                //         .radio-label {
+                //             display: inline-block;
+                //             padding: 2% 5%;
+                //             margin-bottom: 2%;
+
+                //             &:hover {
+                //                 background: $text-color;
+                //                 color: white;
+                //             }
+                //         }
+                //     }
+                // }
+
+                &.name,
+                &.guest-info {
+                    textarea {
+                        aspect-ratio: 9 / 1;
+                    }
+                }
+
+                &.guest-number {
+                    display: flex;
+                    gap: 2%;
+
+                    .label {
+                        font-family: $font-SVG-gotham;
+                        display: flex;
+                        flex-direction: column;
+                        @include flex-center;
+                        width: 35%;
+                        text-transform: uppercase;
+                    }
+
+                    input {
+                        width: 63%;
+                    }
+                }
+            }
+
+            .submit-btn {
+                width: 194px;
+                padding: 1% 2%;
+                line-height: 1;
+                background: $text-color;
+                color: white;
+                border: none;
+                border-radius: 14px;
+                font-weight: 300;
+                font-size: 20px;
+                font-family: inherit;
+                cursor: pointer;
+                text-transform: uppercase;
+                transition: background 0.3s ease;
+                margin: 5% 0 10%;
+
+                span {
+                    font-style: italic;
+                    font-size: 9.2px;
+                }
+            }
+
+            .submit-btn:hover {
+                background: rgb(41, 51, 36);
+                opacity: 0.9;
+            }
+
+            .submit-btn:active {
+                transform: scale(0.98);
+            }
+        }
+
+        @media (max-width: 1282px) {
+            .header {
+                .divider {
+                    img {
+                        max-width: calc((42 / 1282) * 100vw);
+                    }
+                }
+
+                .title {
+                    font-size: calc((30 / 1282) * 100vw);
+
+                }
+
+                i.title-vi {
+                    font-size: calc((14 / 1282) * 100vw);
+                }
+
+                .subtext {
+                    font-size: calc((14.5 / 1282) * 100vw);
+                }
+            }
+
+            .rsvp-form {
+                .button-group {
+                    .radio-label {
+                        border-radius: calc((18 / 1282) * 100vw);
+                        font-size: calc((10.8 / 1282) * 100vw);
+                    }
+                }
+
+                .form-group {
+                    font-size: calc((10 / 1282) * 100vw);
+
+                    input[type="text"],
+                    input[type="number"],
+                    textarea {
+                        border-radius: calc((14 / 1282) * 100vw);
+                        font-size: calc((12 / 1282) * 100vw);
+                    }
+
+                    textarea#message {
+                        border-radius: calc((15 / 1282) * 100vw);
+                    }
+
+                    textarea#guest-names {
+                        border-radius: calc((15 / 1282) * 100vw);
+                    }
+
+                    .subtitle {
+                        font-size: calc((14 / 1282) * 100vw);
+                    }
+
+                    i.subtitle-vi {
+                        font-size: calc((9.2 / 1282) * 100vw);
+                    }
+
+                    .flower1 {
+                        max-width: calc((82 / 1282) * 100vw);
+                    }
+                }
+
+                .submit-btn {
+                    font-size: calc((10.8 / 1282) * 100vw);
+                    border-radius: calc((14 / 1282) * 100vw)
+                }
+            }
+        }
+    }
+
+}

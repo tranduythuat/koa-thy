@@ -1,0 +1,69 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.lookbook {
+    width: 100%;
+
+    .content {
+        width: 100%;
+        aspect-ratio: 1282 / 1456;
+
+        .title {
+            font-family: $font-AstonScriptBold;
+            font-size: 38px;
+            margin: 5%;
+        }
+
+        .slider-box {
+            .swiper {
+                width: 80%;
+                padding: 20px 0;
+            }
+
+            /* Quan trọng: ép easing tuyến tính để chuyển động mượt, liên tục như cuộn phim */
+            .swiper-wrapper {
+                transition-timing-function: linear !important;
+            }
+
+            .swiper-slide {
+                max-width: 250px;
+                aspect-ratio: 2 / 3;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+            }
+
+            .swiper-slide img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            .slider .main-swiper .swiper-button-next,
+            .slider .main-swiper .swiper-button-prev {
+                color: #fffffe;
+            }
+        }
+
+        .subtitle {
+            font-size: 20px;
+            margin: 4%;
+        }
+
+        .text {
+            font-size: 20px;
+            padding: 0 12% 5%;
+
+            p {
+                margin-bottom: 2%;
+            }
+        }
+
+        .bottom-img {
+            width: 100%;
+            aspect-ratio: 1282 / 700;
+            background: url('../../assets/images/lookbook_img_cottom.jpg') no-repeat center / cover;
+        }
+    }
+}

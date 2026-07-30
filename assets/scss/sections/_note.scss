@@ -1,0 +1,35 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.note {
+    width: 100%;
+
+    .content {
+        width: 100%;
+        aspect-ratio: 1282 / 772;
+        background: url('../../assets/images/note_bg.jpg') no-repeat center / cover;
+        color: #faf7f2ff;
+        @include flex-center;
+        flex-direction: column;
+
+        .logo {
+            margin-bottom: 11%;
+
+            img {
+                max-width: 125px;
+            }
+        }
+
+        .title {
+            font-family: $font-AstonScriptBold;
+            font-size: 38px;
+            margin-bottom: 3%;
+        }
+
+        .subtext {
+            font-size: 22px;
+            padding: 0 12%;
+            text-align: center;
+        }
+    }
+}

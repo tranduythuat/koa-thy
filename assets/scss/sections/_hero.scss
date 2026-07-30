@@ -1,0 +1,25 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.hero {
+    width: 100%;
+
+    .content {
+        aspect-ratio: 1282 / 1072;
+        width: 100%;
+        background: url('../../assets/images/hero_bg.png') no-repeat bottom / contain,
+            url('../../assets/images/base_bg.png') no-repeat center / cover;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+
+        img.text-img-01 {
+            max-width: 734px;
+            margin-top: 22%;
+        }
+
+        @media (max-width: 1282px) {}
+    }
+}

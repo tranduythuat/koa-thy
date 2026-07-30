@@ -1,0 +1,150 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+nav {
+    // background-color: bisque;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4% 0;
+    z-index: 100;
+    transition: padding 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+
+    &.scrolled {
+        padding: 12px 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(4px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+        li {
+            max-width: 90px;
+        }
+
+        .nav-logo {
+            max-width: 240px;
+
+            a img {
+                max-width: 90px;
+            }
+        }
+
+    }
+
+    +* {
+        scroll-margin-top: 120px;
+    }
+
+    ul {
+        position: relative;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+    }
+
+    li {
+        // height: 50px;
+        max-width: 120px;
+        width: 100%;
+
+        &.nav-logo {
+            max-width: 350px;
+
+            a img {
+                max-width: 143px;
+            }
+        }
+    }
+
+    a {
+        width: 100%;
+        height: 100%;
+        // padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: #592815ff;
+        font-size: 11.5px;
+        transition: transform 0.2s ease, background-color 0.2s ease;
+
+        &:hover {
+            // background-color: #f0f0f0;
+            transform: scale(1.08);
+            font-weight: 600;
+        }
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(12px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        z-index: 20;
+
+        li {
+            width: 100%;
+            margin-bottom: 10%;
+            margin-left: 5%;
+
+            &.close-icon {
+                cursor: pointer;
+            }
+        }
+
+        a {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+    }
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        position: absolute;
+        display: block;
+        max-width: 60px;
+        right: 2%;
+        top: 2%;
+        z-index: 10;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    nav li {
+        max-width: 100%;
+
+        &.nav-logo {
+            max-width: 150px;
+
+            a img {
+                max-width: 70px;
+            }
+        }
+    }
+}
