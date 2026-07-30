@@ -44,7 +44,7 @@
         <li class="hideOnMobile"><a href="#destination">THE <br>DESTINATION</a></li>
         <li class="hideOnMobile"><a href="#story">THE <br> STORY</a></li>
         <li class="hideOnMobile"><a href="#lookbook">THE <br> LOOKBOOK</a></li>
-        <li class="nav-logo"><a href="#"><img src="assets/images/logo.png" alt=""></a></li>
+        <li class="nav-logo"><a href="#"><img src="assets/images/logo.png" alt="" data-animate="fade-down"></a></li>
         <li class="hideOnMobile"><a href="#travel">THE <br>TRAVEL GUIDE</a></li>
         <li class="hideOnMobile"><a href="#before">BEFORE <br>YOU ARRIVE</a></li>
         <li class="hideOnMobile"><a href="#rsvp">RSVP</a></li>
@@ -68,87 +68,106 @@
     <!-- HERO / COVER -->
     <section class="hero">
       <div class="content">
-        <img src="assets/images/text_img_01.png" class="text-img-01" alt="">
+        <img src="assets/images/text_img_01.png" class="text-img-01" data-animate="fade-in" alt="">
       </div>
     </section>
 
     <section class="invite">
       <div class="content">
         <div class="logo">
-          <img src="assets/images/invite_logo.png" alt="">
+          <img src="assets/images/invite_logo.png" alt="" data-animate="flip-vertical-left">
         </div>
-        <p class="eyebrow">INVITE YOU TO CELEBRATE</p>
-        <p class="eyebrow sub">THE WEDDING OF</p>
+        <p class="eyebrow" data-animate="fade-in">YOU ARE INVITED TO CELEBRATE</p>
+        <p class="eyebrow sub" data-animate="fade-in">THE WEDDING OF</p>
 
-        <h1 class="names">Koa and Thy</h1>
+        <h1 class="names" data-animate="fade-left">Koa and Thy</h1>
 
         <div class="divider">
-          <img src="assets/images/divider.png" alt="">
+          <img src="assets/images/divider.png" data-animate="fade-in" alt="">
         </div>
 
         <!-- Welcome Drinks -->
-        <p class="event-label">WELCOME DRINKS</p>
-        <p class="event-date">Monday 22nd February 2027</p>
-        <p class="event-time">19:30 - 21:00</p>
-        <p class="venue">Hẻm Hội An</p>
-        <a href="#" class="maps-btn">MAPS</a>
+        <p class="event-label" data-animate="fade-in">WELCOME DRINKS</p>
+        <p class="event-date" data-animate="fade-in">Monday 22nd February 2027</p>
+        <p class="event-time" data-animate="fade-in">19:30 PM - 21:00 PM</p>
+        <p class="venue" data-animate="fade-in">Hẻm Hội An</p>
+        <a href="#" class="maps-btn" data-animate="fade-in">MAPS</a>
 
-        <div class="description">
+        <div class="description" data-animate="fade-in">
           <p>What to expect: A relaxed evening to settle in, catch up with familiar faces, meet a few new ones, and
             raise a glass
             before the big day.</p>
-          <p>White neutral casual attire is encouraged... think linen, cotton, and effortless holiday dressing.</p>
+          <p>White & light neutral casual attire is encouraged... think linen, cotton, and effortless holiday dressing.
+          </p>
         </div>
 
         <div class="divider-02">
           <img src="assets/images/divider.png" alt="">
         </div>
 
-        <div class="section-gap">
+        <div class="section-gap" data-animate="fade-in">
           <p class="event-label">THE CELEBRATION</p>
           <p class="event-date">Tuesday 23rd February 2027</p>
 
           <p class="venue">Palm Garden Hoi An</p>
-          <a href="#" class="maps-btn">MAPS</a>
+          <a href="#" class="maps-btn" data-animate="fade-in">MAPS</a>
         </div>
 
         <!-- Timeline -->
         <div class="timeline-badge">
-          <label for="">Timeline</label>
-          <img src="assets/images/timeline_outline.png" alt="">
+          <label for="" data-animate="fade-left">Timeline</label>
+          <!-- <img src="assets/images/timeline_outline.png" alt=""> -->
         </div>
 
         <div class="timeline">
-          <div class="item">
+          <div class="item timeline-item">
             <div class="icon">
-              <img src="assets/images/icons/gate.png" alt="">
-              <hr>
+              <img src="assets/images/icons/gate.png" class="icon-animate" alt="">
+              <!-- <hr> -->
             </div>
-            <div class="time">16:00</div>
-            <div class="name">Ceremony</div>
-          </div>
-          <div class="item">
-            <div class="icon">
-              <img src="assets/images/icons/cups.png" alt="">
-              <hr>
+            <div class="time">04:00 PM</div>
+            <div class="name">Ceremony <br>
+              <span>Join us as we exchange our vows underneath the palms</span>
             </div>
-            <div class="time">17:00</div>
-            <div class="name">Cocktail Hour</div>
           </div>
-          <div class="item">
+          <div class="item timeline-item">
             <div class="icon">
-              <img src="assets/images/icons/dinner.png" alt="">
-              <hr>
+              <img src="assets/images/icons/cups.png" class="icon-animate" alt="">
+              <!-- <hr> -->
             </div>
-            <div class="time">18:00</div>
-            <div class="name">Dinner</div>
+            <div class="time">05:00 PM</div>
+            <div class="name">
+              Cocktail Hour <br>
+              <span>
+                Take in the golden hour with a drink in hand and enjoy a few bites <br>
+                while we sneak away for a few sunset photos.
+              </span>
+            </div>
           </div>
-          <div class="item">
+          <div class="item timeline-item">
             <div class="icon">
-              <img src="assets/images/icons/party.png" alt="">
+              <img src="assets/images/icons/dinner.png" class="icon-animate" alt="">
+              <!-- <hr> -->
+            </div>
+            <div class="time">06:00 PM</div>
+            <div class="name">Dinner Reception <br>
+              <span>
+                Gather around the table for a shared feast, heartfelt speeches <br>
+                and a night of celebrating together.
+              </span>
+
+            </div>
+          </div>
+          <div class="item timeline-item">
+            <div class="icon">
+              <img src="assets/images/icons/party.png" class="icon-animate" alt="">
             </div>
             <div class="time">21:30</div>
-            <div class="name">After Party</div>
+            <div class="name">After Party <br>
+              <span>
+                Grab a drink, hit the danceﬂoor and celebrate with us into the night.
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -156,11 +175,11 @@
 
     <section class="destination">
       <div class="content">
-        <div class="top-img"></div>
+        <div class="top-img" data-animate="fade-down"></div>
         <div class="main" id="destination">
           <div class="box-1">
-            <div class="slider-box">
-              <div class="title">The Destination</div>
+            <div class="slider-box" data-animate="fade-in">
+              <div class="title" data-animate="fade-left">The Destination</div>
               <div class="slider">
                 <div class="swiper main-swiper">
                   <div class="swiper-wrapper">
@@ -170,6 +189,16 @@
                     <div class="swiper-slide"><img src="assets/images/destination/4.jpg" /></div>
                     <div class="swiper-slide"><img src="assets/images/destination/5.jpg" /></div>
                     <div class="swiper-slide"><img src="assets/images/destination/6.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/7.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/8.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/9.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/10.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/11.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/12.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/13.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/14.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/15.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/16.jpg" /></div>
                   </div>
 
                   <div class="swiper-button-next"></div>
@@ -184,6 +213,16 @@
                     <div class="swiper-slide"><img src="assets/images/destination/4.jpg" /></div>
                     <div class="swiper-slide"><img src="assets/images/destination/5.jpg" /></div>
                     <div class="swiper-slide"><img src="assets/images/destination/6.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/7.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/8.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/9.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/10.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/11.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/12.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/13.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/14.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/15.jpg" /></div>
+                    <div class="swiper-slide"><img src="assets/images/destination/16.jpg" /></div>
                   </div>
                 </div>
               </div>
@@ -255,9 +294,9 @@
           </div>
           <div class="box-2">
             <hr>
-            <div class="subtext">THE WEDDING OF <span>Koa and Thy</span></div>
+            <div class="subtext" data-animate="fade-in">THE WEDDING OF <span>Koa and Thy</span></div>
             <div class="divider">
-              <img src="assets/images/divider_01.png" alt="">
+              <img src="assets/images/divider_01.png" data-animate="flip-vertical-left" alt="">
             </div>
           </div>
         </div>
@@ -266,8 +305,8 @@
 
     <section class="our-story" id="story">
       <div class="content">
-        <div class="title">The Story</div>
-        <div class="text">
+        <div class="title" data-animate="fade-left">The Story</div>
+        <div class="text" data-animate="fade-in">
           <p>It all began at a birthday party in Sydney in 2019.</p>
           <p>A cancelled after-party turned into hours of
             conversation by the beach, and the beginning
@@ -281,9 +320,20 @@
           <p>Our next chapter continues in Hoi An, and we
             can't wait to celebrate it with all of you.</p>
         </div>
-
-        <img src="assets/images/TheStory/1.jpg" class="couple-1" alt="">
-        <img src="assets/images/TheStory/2.jpg" class="couple-2" alt="">
+        <div class="group-img">
+          <div class="box-img">
+            <img src="assets/images/TheStory/1.jpg" class="couple-1" alt="">
+          </div>
+          <div class="box-img">
+            <img src="assets/images/TheStory/2.jpg" class="couple-2" alt="">
+          </div>
+          <div class="box-img">
+            <img src="assets/images/TheStory/3.jpg" class="couple-3" alt="">
+          </div>
+          <div class="box-img">
+            <img src="assets/images/TheStory/4.jpg" class="couple-4" alt="">
+          </div>
+        </div>
       </div>
     </section>
 

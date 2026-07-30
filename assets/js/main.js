@@ -376,6 +376,7 @@
     items.forEach((item, index) => {
       const icon = item.querySelector(".icon-animate");
       const time = item.querySelector(".time");
+      const name = item.querySelector(".name");
       const overlap = index === 0 ? 0 : 0.2 + index * 0.1;
 
       // Item fade
@@ -409,6 +410,20 @@
       if (time) {
         tl.from(
           time,
+          {
+            opacity: 0,
+            x: -50,
+            duration: 1,
+            ease: "power2.out"
+          },
+          "<0.4"
+        );
+      }
+
+      // Time fade
+      if (name) {
+        tl.from(
+          name,
           {
             opacity: 0,
             x: -50,
@@ -669,7 +684,10 @@
   function initClickScrollMenu() {
     const menus = document.querySelectorAll('.menu-items');
     const nav = document.querySelector('nav');
-    const offset = nav ? nav.getBoundingClientRect().height : 95;
+    // const offset = nav ? nav.getBoundingClientRect().height : 95;
+    const offset = 95;
+
+    console.log('--- DATA offset ---', offset);
 
     menus.forEach((menu) => {
       menu.querySelectorAll('a[href^="#"]').forEach(link => {

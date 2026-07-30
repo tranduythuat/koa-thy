@@ -7,47 +7,64 @@
     .content {
         width: 100%;
         aspect-ratio: 1282 / 857;
-        background: url('../../assets/images/story_bg.png') no-repeat center / cover;
+        background: url('../../assets/images/story_bg.jpg') no-repeat top / cover;
         color: #f2dfc2ff;
         position: relative;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        text-align: left;
+        padding: 2% 5%;
 
         .title {
             font-family: $font-AstonScriptBold;
-            font-size: 195px;
+            font-size: 73px;
             line-height: 2;
+            z-index: 10;
         }
 
         .text {
             font-size: 19.7px;
-            max-width: 430px;
+            max-width: 1180px;
             width: 100%;
-            text-align: justify;
-            margin-left: 10%;
 
             p {
-                margin-bottom: 5%;
+                margin-bottom: 2%;
             }
         }
 
-        img {
+        .group-img {
+            margin: auto;
+            width: 100%;
+            top: 0;
+            left: 0;
             position: absolute;
-            max-width: 280px;
-            border-style: solid;
-            border-width: 18px 20px 62px;
-            border-color: #f2efe7ff;
+            padding: 4%;
+            display: flex;
+            justify-content: space-between;
 
-            &.couple-1 {
-                transform: rotate(-10deg);
-                max-width: 320px;
-                bottom: 12%;
-                right: 23%;
-            }
+            img {
+                max-width: 261px;
+                position: relative;
+                z-index: 5;
 
-            &.couple-2 {
-                transform: rotate(5deg);
-                bottom: 5%;
-                right: 3%;
+                &.couple-1 {
+                    top: 10%;
+                }
+
+                &.couple-2 {
+                    top: 30%;
+                }
+
+                &.couple-3 {
+                    top: -5%;
+                }
+
+                &.couple-4 {
+                    top: 15%;
+                }
             }
         }
+
     }
 }
