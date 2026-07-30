@@ -584,7 +584,6 @@ nav .sidebar a {
   align-items: center;
   border-radius: 18px;
   text-transform: uppercase;
-  transition: all 0.3s ease;
   line-height: 1;
   margin: 1% 0;
 }
@@ -935,6 +934,7 @@ nav .sidebar a {
 .lookbook .content {
   width: 100%;
   aspect-ratio: 1282/1456;
+  background: url("../../assets/images/travel_guide_bg_bt.png") no-repeat bottom/contain, url("../../assets/images/base_bg.png") repeat center/contain;
 }
 .lookbook .content .title {
   font-family: "AstonScriptBold-Bold", sans-serif;
