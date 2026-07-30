@@ -440,8 +440,8 @@ nav .sidebar a {
   position: relative;
 }
 .hero .content img.text-img-01 {
-  max-width: 734px;
-  margin-top: 22%;
+  max-width: 847px;
+  margin-top: 20%;
 }
 .invite {
   width: 100%;
@@ -460,7 +460,7 @@ nav .sidebar a {
 }
 .invite .content .logo {
   position: absolute;
-  top: -6%;
+  top: -4.2%;
 }
 .invite .content .logo img {
   max-width: 171px;
