@@ -267,6 +267,11 @@
                         .slider {
                             width: calc((407 / 600) * 100vw);
                         }
+
+                        .slider .main-swiper .swiper-button-next:after,
+                        .slider .main-swiper .swiper-button-prev:after {
+                            font-size: calc((45 / 600) * 100vw);
+                        }
                     }
 
                     .faq-box {
