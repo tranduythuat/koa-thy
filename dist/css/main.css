@@ -553,7 +553,8 @@ nav .sidebar a {
   margin-bottom: 4%;
 }
 .invite .content .divider {
-  margin-bottom: 2%;
+  margin-bottom: 3%;
+  margin-top: 3%;
 }
 .invite .content .venue {
   text-transform: uppercase;
