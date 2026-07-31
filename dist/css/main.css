@@ -305,6 +305,9 @@ section {
   }
 }
 nav {
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-blur: 6px;
+  --glass-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   position: fixed;
   top: 0;
   left: 0;
@@ -315,17 +318,17 @@ nav {
 }
 nav.scrolled {
   padding: 12px 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(4px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  background-color: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  box-shadow: var(--glass-shadow);
 }
-nav.scrolled li {
+nav.scrolled > ul:not(.sidebar) > li {
   max-width: 100%;
 }
-nav.scrolled .nav-logo {
+nav.scrolled > ul:not(.sidebar) > .nav-logo {
   max-width: 240px;
 }
-nav.scrolled .nav-logo a img {
+nav.scrolled > ul:not(.sidebar) > .nav-logo a img {
   max-width: 90px;
 }
 nav + * {
@@ -373,8 +376,8 @@ nav .sidebar {
   right: 0;
   height: 100vh;
   width: 300px;
-  background-color: rgba(255, 255, 255, 0.527);
-  backdrop-filter: blur(12px);
+  background-color: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   list-style: none;
   display: none;
@@ -402,13 +405,13 @@ nav .sidebar a {
   nav.scrolled {
     padding: 0.9360374415vw 0;
   }
-  nav.scrolled li {
+  nav.scrolled > ul:not(.sidebar) > li {
     max-width: 8.5803432137vw;
   }
-  nav.scrolled .nav-logo {
+  nav.scrolled > ul:not(.sidebar) > .nav-logo {
     max-width: 18.72074883vw;
   }
-  nav.scrolled .nav-logo a img {
+  nav.scrolled > ul:not(.sidebar) > .nav-logo a img {
     max-width: 7.0202808112vw;
   }
   nav + * {
@@ -431,10 +434,10 @@ nav .sidebar a {
   nav.scrolled {
     padding: 2vw 0;
   }
-  nav.scrolled .nav-logo {
+  nav.scrolled > ul:not(.sidebar) > .nav-logo {
     max-width: 40vw;
   }
-  nav.scrolled .nav-logo a img {
+  nav.scrolled > ul:not(.sidebar) > .nav-logo a img {
     max-width: 15vw;
   }
   nav li {
@@ -726,6 +729,9 @@ nav .sidebar a {
   .invite .content .section-gap .venue {
     margin-bottom: 0.5%;
   }
+  .invite .content .section-gap .event-date {
+    margin-bottom: 4%;
+  }
   .invite .content .timeline-badge {
     max-width: 27.8333333333vw;
   }
@@ -951,10 +957,10 @@ nav .sidebar a {
     padding-left: 0;
   }
   .destination .content .main .box-1 .slider-box .title {
-    font-size: 4.3333333333vw;
-    margin: 15% 0;
+    font-size: 6vw;
+    margin: 17% 0 15%;
     margin-right: auto;
-    padding-left: 10%;
+    padding-left: 0%;
   }
   .destination .content .main .box-1 .slider-box .slider {
     width: 91.6666666667vw;
@@ -1300,9 +1306,6 @@ nav .sidebar a {
   .lookbook .content .title {
     font-size: 4.0561622465vw;
   }
-  .lookbook .content .slider-box .swiper {
-    width: 6.6302652106vw;
-  }
   .lookbook .content .slider-box .swiper-slide {
     max-width: 19.5007800312vw;
   }
@@ -1315,13 +1318,13 @@ nav .sidebar a {
 }
 @media (max-width: 600px) {
   .lookbook .content .title {
-    font-size: 4.6666666667vw;
+    font-size: 7vw;
   }
   .lookbook .content .slider-box .swiper {
-    width: 85.3333333333vw;
+    width: 96.6666666667vw;
   }
   .lookbook .content .slider-box .swiper-slide {
-    max-width: 27vw;
+    max-width: 31.6666666667vw;
   }
   .lookbook .content .subtitle {
     font-size: 4.3333333333vw;
@@ -1379,7 +1382,7 @@ nav .sidebar a {
     justify-content: start;
   }
   .note .content .logo {
-    margin-bottom: 15%;
+    margin-bottom: 18%;
   }
   .note .content .logo img {
     max-width: 14.1666666667vw;
@@ -1389,7 +1392,7 @@ nav .sidebar a {
     margin-bottom: 2%;
   }
   .note .content .subtext {
-    font-size: 4vw;
+    font-size: 3.3333333333vw;
     padding: 0 5%;
   }
 }

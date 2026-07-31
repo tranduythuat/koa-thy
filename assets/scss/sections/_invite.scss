@@ -252,6 +252,7 @@
                 font-size: calc((24 / 600) * 100vw);
             }
 
+
             .description {
                 font-size: calc((24 / 600) * 100vw);
                 margin: 0 4%;
@@ -263,6 +264,10 @@
 
                 .venue {
                     margin-bottom: .5%
+                }
+
+                .event-date {
+                    margin-bottom: 4%;
                 }
             }
 

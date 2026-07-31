@@ -73,10 +73,6 @@
             }
 
             .slider-box {
-                .swiper {
-                    width: calc((85 / 1282) * 100vw);
-                }
-
                 .swiper-slide {
                     max-width: calc((250 / 1282) * 100vw);
                 }
@@ -93,16 +89,16 @@
 
         @media (max-width: 600px) {
             .title {
-                font-size: calc((28 / 600) * 100vw);
+                font-size: calc((42 / 600) * 100vw);
             }
 
             .slider-box {
                 .swiper {
-                    width: calc((512 / 600) * 100vw);
+                    width: calc((580 / 600) * 100vw);
                 }
 
                 .swiper-slide {
-                    max-width: calc((162 / 600) * 100vw);
+                    max-width: calc((190 / 600) * 100vw);
                 }
             }
 

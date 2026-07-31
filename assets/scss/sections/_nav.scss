@@ -3,6 +3,9 @@
 
 nav {
     // background-color: bisque;
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --glass-blur: 6px;
+    --glass-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     position: fixed;
     top: 0;
     left: 0;
@@ -13,15 +16,15 @@ nav {
 
     &.scrolled {
         padding: 12px 0;
-        background-color: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(4px);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        background-color: var(--glass-bg);
+        backdrop-filter: blur(var(--glass-blur));
+        box-shadow: var(--glass-shadow);
 
-        li {
+        >ul:not(.sidebar)>li {
             max-width: 100%;
         }
 
-        .nav-logo {
+        >ul:not(.sidebar)>.nav-logo {
             max-width: 240px;
 
             a img {
@@ -86,8 +89,8 @@ nav {
         right: 0;
         height: 100vh;
         width: 300px;
-        background-color: rgba(255, 255, 255, 0.527);
-        backdrop-filter: blur(12px);
+        background-color: var(--glass-bg);
+        backdrop-filter: blur(var(--glass-blur));
         box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
         list-style: none;
         display: none;
@@ -121,11 +124,11 @@ nav {
         &.scrolled {
             padding: calc((12 / 1282) * 100vw) 0;
 
-            li {
+            >ul:not(.sidebar)>li {
                 max-width: calc((110 / 1282) * 100vw);
             }
 
-            .nav-logo {
+            >ul:not(.sidebar)>.nav-logo {
                 max-width: calc((240 / 1282) * 100vw);
 
                 a img {
@@ -160,11 +163,7 @@ nav {
         &.scrolled {
             padding: calc((12 / 600) * 100vw) 0;
 
-            li {
-                // max-width: 80%;
-            }
-
-            .nav-logo {
+            >ul:not(.sidebar)>.nav-logo {
                 max-width: calc((240 / 600) * 100vw);
 
                 a img {
