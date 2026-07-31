@@ -43,54 +43,6 @@
             }
         }
 
-        .header {
-            padding: 5% 0;
-
-            .divider {
-                margin-bottom: 5%;
-
-                img {
-                    max-width: 42px;
-                }
-            }
-
-            .title {
-                font-size: 30px;
-                font-family: $font-AstonScriptBold;
-                line-height: .8;
-                margin-bottom: 5%;
-
-            }
-
-            i.title-vi {
-                display: block;
-                text-transform: unset;
-                font-family: $font-SVG-GothamLight;
-                font-size: 14px;
-                line-height: 2;
-                margin-bottom: 3%;
-            }
-
-            .subtext {
-                font-size: 14.5px;
-                margin-bottom: 5%;
-                text-align: justify;
-                text-align-last: center;
-                font-family: $font-SVG-gothamBook;
-            }
-
-            .subtext-vi {
-                display: block;
-                font-size: $font-SVG-GothamLight;
-                text-align: justify;
-                text-align-last: center;
-            }
-
-            hr {
-                margin: 5% 0 7%;
-            }
-        }
-
         .rsvp-form {
             display: block;
 
@@ -299,69 +251,45 @@
         }
 
         @media (max-width: 1282px) {
-            .header {
-                .divider {
-                    img {
-                        max-width: calc((42 / 1282) * 100vw);
-                    }
-                }
+            .title {
+                font-size: calc((54 / 1282) * 100vw);
+            }
 
-                .title {
-                    font-size: calc((30 / 1282) * 100vw);
+            .subtext {
+                font-size: calc((20 / 1282) * 100vw);
+            }
 
-                }
+            .text {
+                font-size: calc((21 / 1282) * 100vw);
+            }
 
-                i.title-vi {
-                    font-size: calc((14 / 1282) * 100vw);
-                }
-
-                .subtext {
-                    font-size: calc((14.5 / 1282) * 100vw);
-                }
+            .divider img {
+                max-width: calc((181 / 1282) * 100vw);
             }
 
             .rsvp-form {
                 .button-group {
                     .radio-label {
-                        border-radius: calc((18 / 1282) * 100vw);
-                        font-size: calc((10.8 / 1282) * 100vw);
+                        font-size: calc((20 / 1282) * 100vw);
                     }
                 }
 
                 .form-group {
-                    font-size: calc((10 / 1282) * 100vw);
+                    .subtitle {
+                        font-size: calc((20 / 1282) * 100vw);
+                    }
 
                     input[type="text"],
                     input[type="number"],
                     textarea {
-                        border-radius: calc((14 / 1282) * 100vw);
-                        font-size: calc((12 / 1282) * 100vw);
-                    }
-
-                    textarea#message {
-                        border-radius: calc((15 / 1282) * 100vw);
-                    }
-
-                    textarea#guest-names {
-                        border-radius: calc((15 / 1282) * 100vw);
-                    }
-
-                    .subtitle {
-                        font-size: calc((14 / 1282) * 100vw);
-                    }
-
-                    i.subtitle-vi {
-                        font-size: calc((9.2 / 1282) * 100vw);
-                    }
-
-                    .flower1 {
-                        max-width: calc((82 / 1282) * 100vw);
+                        font-size: calc((17 / 1282) * 100vw);
                     }
                 }
 
+
                 .submit-btn {
-                    font-size: calc((10.8 / 1282) * 100vw);
-                    border-radius: calc((14 / 1282) * 100vw)
+                    width: calc((194 / 1282) * 100vw);
+                    font-size: calc((20 / 1282) * 100vw);
                 }
             }
         }

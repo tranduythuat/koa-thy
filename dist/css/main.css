@@ -320,7 +320,7 @@ nav.scrolled {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 nav.scrolled li {
-  max-width: 90px;
+  max-width: 110px;
 }
 nav.scrolled .nav-logo {
   max-width: 240px;
@@ -396,6 +396,35 @@ nav .sidebar a {
   align-items: center;
   justify-content: start;
 }
+@media (max-width: 1282px) {
+  nav.scrolled {
+    padding: 0.9360374415vw 0;
+  }
+  nav.scrolled li {
+    max-width: 8.5803432137vw;
+  }
+  nav.scrolled .nav-logo {
+    max-width: 18.72074883vw;
+  }
+  nav.scrolled .nav-logo a img {
+    max-width: 7.0202808112vw;
+  }
+  nav + * {
+    scroll-margin-top: 9.360374415vw;
+  }
+  nav li {
+    max-width: 9.360374415vw;
+  }
+  nav li.nav-logo {
+    max-width: 27.3010920437vw;
+  }
+  nav li.nav-logo a img {
+    max-width: 11.1544461778vw;
+  }
+  nav a {
+    font-size: 0.8970358814vw;
+  }
+}
 
 .menu-button {
   display: none;
@@ -443,6 +472,12 @@ nav .sidebar a {
   max-width: 847px;
   margin-top: 20%;
 }
+@media (max-width: 1282px) {
+  .hero .content img.text-img-01 {
+    max-width: 66.0686427457vw;
+  }
+}
+
 .invite {
   width: 100%;
 }
@@ -592,41 +627,39 @@ nav .sidebar a {
 }
 @media (max-width: 1282px) {
   .invite .content .logo img {
-    max-width: 9.0483619345vw;
+    max-width: 13.3385335413vw;
   }
-  .invite .content .invite-text {
-    font-size: 1.0920436817vw;
+  .invite .content .eyebrow {
+    font-size: 1.1700468019vw;
   }
-  .invite .content .couple-image img {
-    max-width: 16.3806552262vw;
+  .invite .content .names {
+    font-size: 5.8502340094vw;
   }
-  .invite .content .names .name {
-    font-size: 2.2620904836vw;
+  .invite .content .event-label,
+  .invite .content .event-date,
+  .invite .content .event-time,
+  .invite .content .venue {
+    font-size: 1.872074883vw;
   }
-  .invite .content .names .and {
-    font-size: 1.248049922vw;
+  .invite .content .description {
+    font-size: 1.3260530421vw;
   }
-  .invite .content .divider img {
-    max-width: 3.2761310452vw;
+  .invite .content .section-gap {
+    font-size: 1.7940717629vw;
   }
-  .invite .content .venue .venue-label,
-  .invite .content .venue .date-time,
-  .invite .content .venue .time-label {
-    font-size: 1.0920436817vw;
+  .invite .content .timeline-badge {
+    max-width: 12.7145085803vw;
   }
-  .invite .content .venue .venue-name {
-    font-size: 1.9500780031vw;
+  .invite .content .timeline .item .icon img {
+    max-width: 3.5101404056vw;
   }
-  .invite .content .venue .venue-address {
-    font-size: 1.0920436817vw;
+  .invite .content .timeline .item .time,
+  .invite .content .timeline .item .name {
+    font-size: 1.4820592824vw;
   }
-  .invite .content .venue .divider-diamond img {
-    max-width: 0.7800312012vw;
-  }
-  .invite .content .map-btn {
+  .invite .content .maps-btn {
     font-size: 1.3260530421vw;
     max-width: 21.6848673947vw;
-    border-radius: 1.4040561622vw;
   }
 }
 
@@ -790,6 +823,38 @@ nav .sidebar a {
 .destination .content .main .box-2 .divider img {
   max-width: 88px;
 }
+@media (max-width: 1282px) {
+  .destination .content .main .box-1 .slider-box .title {
+    font-size: 3.9781591264vw;
+  }
+  .destination .content .main .box-1 .slider-box .slider {
+    width: 31.7472698908vw;
+  }
+  .destination .content .main .box-1 .faq-box .title {
+    font-size: 2.496099844vw;
+  }
+  .destination .content .main .box-1 .faq-box .faq-container {
+    max-width: 37.4414976599vw;
+  }
+  .destination .content .main .box-1 .faq-box .faq-container .faq-item .faq-header {
+    font-size: 1.5600624025vw;
+  }
+  .destination .content .main .box-1 .faq-box .faq-container .faq-item .faq-header .icon {
+    font-size: 2.0280811232vw;
+  }
+  .destination .content .main .box-1 .faq-box .faq-container .faq-item .faq-content p {
+    font-size: 1.5600624025vw;
+  }
+  .destination .content .main .box-2 .subtext {
+    font-size: 1.5600624025vw;
+  }
+  .destination .content .main .box-2 .subtext span {
+    font-size: 1.7160686427vw;
+  }
+  .destination .content .main .box-2 .divider img {
+    max-width: 6.864274571vw;
+  }
+}
 
 .travel-guide {
   width: 100%;
@@ -870,6 +935,32 @@ nav .sidebar a {
   padding: 0 0 3%;
   font-size: 20px;
 }
+@media (max-width: 1282px) {
+  .travel-guide .content .divider img {
+    max-width: 9.984399376vw;
+  }
+  .travel-guide .content .title {
+    font-size: 4.368174727vw;
+  }
+  .travel-guide .content .subtext {
+    font-size: 1.5600624025vw;
+  }
+  .travel-guide .content .guide .title {
+    font-size: 2.496099844vw;
+  }
+  .travel-guide .content .guide .faq-container {
+    max-width: 59.2823712949vw;
+  }
+  .travel-guide .content .guide .faq-container .faq-item .faq-header {
+    font-size: 1.5600624025vw;
+  }
+  .travel-guide .content .guide .faq-container .faq-item .faq-header .icon {
+    font-size: 2.3400936037vw;
+  }
+  .travel-guide .content .guide .faq-container .faq-item .faq-content p {
+    font-size: 1.5600624025vw;
+  }
+}
 
 .our-story {
   width: 100%;
@@ -936,6 +1027,18 @@ nav .sidebar a {
   transform: scale(1.1);
   z-index: 0;
 }
+@media (max-width: 1282px) {
+  .our-story .content .title {
+    font-size: 5.6942277691vw;
+  }
+  .our-story .content .text {
+    font-size: 1.5366614665vw;
+    max-width: 92.0436817473vw;
+  }
+  .our-story .content .group-img img {
+    max-width: 20.3588143526vw;
+  }
+}
 
 .lookbook {
   width: 100%;
@@ -993,6 +1096,23 @@ nav .sidebar a {
   aspect-ratio: 1282/700;
   background: url("../../assets/images/lookbook_img_cottom.jpg") no-repeat center/cover;
 }
+@media (max-width: 1282px) {
+  .lookbook .content .title {
+    font-size: 4.0561622465vw;
+  }
+  .lookbook .content .slider-box .swiper {
+    width: 85vw;
+  }
+  .lookbook .content .slider-box .swiper-slide {
+    max-width: 19.5007800312vw;
+  }
+  .lookbook .content .subtitle {
+    font-size: 2.6521060842vw;
+  }
+  .lookbook .content .text {
+    font-size: 1.5600624025vw;
+  }
+}
 
 .note {
   width: 100%;
@@ -1022,6 +1142,17 @@ nav .sidebar a {
   font-size: 22px;
   padding: 0 12%;
   text-align: center;
+}
+@media (max-width: 1282px) {
+  .note .content .logo img {
+    max-width: 9.7503900156vw;
+  }
+  .note .content .title {
+    font-size: 2.9641185647vw;
+  }
+  .note .content .subtext {
+    font-size: 1.7160686427vw;
+  }
 }
 
 .rsvp {
@@ -1057,45 +1188,6 @@ nav .sidebar a {
 }
 .rsvp .content .divider img {
   max-width: 181px;
-}
-.rsvp .content .header {
-  padding: 5% 0;
-}
-.rsvp .content .header .divider {
-  margin-bottom: 5%;
-}
-.rsvp .content .header .divider img {
-  max-width: 42px;
-}
-.rsvp .content .header .title {
-  font-size: 30px;
-  font-family: "AstonScriptBold-Bold", sans-serif;
-  line-height: 0.8;
-  margin-bottom: 5%;
-}
-.rsvp .content .header i.title-vi {
-  display: block;
-  text-transform: unset;
-  font-family: "SVG-GothamLight", sans-serif;
-  font-size: 14px;
-  line-height: 2;
-  margin-bottom: 3%;
-}
-.rsvp .content .header .subtext {
-  font-size: 14.5px;
-  margin-bottom: 5%;
-  text-align: justify;
-  text-align-last: center;
-  font-family: "SVG-gotham-book", sans-serif;
-}
-.rsvp .content .header .subtext-vi {
-  display: block;
-  font-size: "SVG-GothamLight", sans-serif;
-  text-align: justify;
-  text-align-last: center;
-}
-.rsvp .content .header hr {
-  margin: 5% 0 7%;
 }
 .rsvp .content .rsvp-form {
   display: block;
@@ -1258,49 +1350,32 @@ nav .sidebar a {
   transform: scale(0.98);
 }
 @media (max-width: 1282px) {
-  .rsvp .content .header .divider img {
-    max-width: 3.2761310452vw;
+  .rsvp .content .title {
+    font-size: 4.2121684867vw;
   }
-  .rsvp .content .header .title {
-    font-size: 2.3400936037vw;
+  .rsvp .content .subtext {
+    font-size: 1.5600624025vw;
   }
-  .rsvp .content .header i.title-vi {
-    font-size: 1.0920436817vw;
+  .rsvp .content .text {
+    font-size: 1.6380655226vw;
   }
-  .rsvp .content .header .subtext {
-    font-size: 1.1310452418vw;
+  .rsvp .content .divider img {
+    max-width: 14.1185647426vw;
   }
   .rsvp .content .rsvp-form .button-group .radio-label {
-    border-radius: 1.4040561622vw;
-    font-size: 0.8424336973vw;
+    font-size: 1.5600624025vw;
   }
-  .rsvp .content .rsvp-form .form-group {
-    font-size: 0.7800312012vw;
+  .rsvp .content .rsvp-form .form-group .subtitle {
+    font-size: 1.5600624025vw;
   }
   .rsvp .content .rsvp-form .form-group input[type=text],
   .rsvp .content .rsvp-form .form-group input[type=number],
   .rsvp .content .rsvp-form .form-group textarea {
-    border-radius: 1.0920436817vw;
-    font-size: 0.9360374415vw;
-  }
-  .rsvp .content .rsvp-form .form-group textarea#message {
-    border-radius: 1.1700468019vw;
-  }
-  .rsvp .content .rsvp-form .form-group textarea#guest-names {
-    border-radius: 1.1700468019vw;
-  }
-  .rsvp .content .rsvp-form .form-group .subtitle {
-    font-size: 1.0920436817vw;
-  }
-  .rsvp .content .rsvp-form .form-group i.subtitle-vi {
-    font-size: 0.7176287051vw;
-  }
-  .rsvp .content .rsvp-form .form-group .flower1 {
-    max-width: 6.3962558502vw;
+    font-size: 1.3260530421vw;
   }
   .rsvp .content .rsvp-form .submit-btn {
-    font-size: 0.8424336973vw;
-    border-radius: 1.0920436817vw;
+    width: 15.1326053042vw;
+    font-size: 1.5600624025vw;
   }
 }
 

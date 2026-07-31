@@ -20,6 +20,10 @@
             margin-top: 20%;
         }
 
-        @media (max-width: 1282px) {}
+        @media (max-width: 1282px) {
+            img.text-img-01 {
+                max-width: calc((847 / 1282) * 100vw);
+            }
+        }
     }
 }

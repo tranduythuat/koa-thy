@@ -18,7 +18,7 @@ nav {
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 
         li {
-            max-width: 90px;
+            max-width: 110px;
         }
 
         .nav-logo {
@@ -112,11 +112,51 @@ nav {
             justify-content: start;
         }
     }
+
+    @media (max-width: 1282px) {
+        &.scrolled {
+            padding: calc((12 / 1282) * 100vw) 0;
+
+            li {
+                max-width: calc((110 / 1282) * 100vw);
+            }
+
+            .nav-logo {
+                max-width: calc((240 / 1282) * 100vw);
+
+                a img {
+                    max-width: calc((90 / 1282) * 100vw);
+                }
+            }
+
+        }
+
+        +* {
+            scroll-margin-top: calc((120 / 1282) * 100vw);
+        }
+
+        li {
+            max-width: calc((120 / 1282) * 100vw);
+
+            &.nav-logo {
+                max-width: calc((350 / 1282) * 100vw);
+
+                a img {
+                    max-width: calc((143 / 1282) * 100vw);
+                }
+            }
+        }
+
+        a {
+            font-size: calc((11.5 / 1282) * 100vw);
+        }
+    }
 }
 
 .menu-button {
     display: none;
 }
+
 
 @media (max-width: 500px) {
     .hideOnMobile {

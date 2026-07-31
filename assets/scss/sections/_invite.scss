@@ -140,57 +140,7 @@
                         font-weight: 300;
                     }
                 }
-
             }
-
-            // .item {
-            //     width: 200px;
-            //     @include flex-center;
-            //     flex-direction: column;
-
-            //     .icon {
-            //         position: relative;
-            //         aspect-ratio: 10 / 4;
-            //         width: 100%;
-            //         @include flex-center;
-
-            //         hr {
-            //             width: 100%;
-            //             position: absolute;
-            //             bottom: 0;
-            //             left: 50%;
-            //             height: 4px;
-            //             background-color: $text-color;
-            //         }
-
-            //         &::before {
-            //             content: "";
-            //             display: block;
-            //             position: absolute;
-            //             aspect-ratio: 1;
-            //             width: 10px;
-            //             background: $text-color;
-            //             border-radius: 50%;
-            //             bottom: 0;
-            //             transform: translateY(25%);
-            //             z-index: 100;
-            //         }
-
-            //         img {
-            //             max-width: 45px;
-            //         }
-            //     }
-
-            //     .time {
-            //         margin: 10% 0 3%;
-            //         font-size: 17px;
-            //     }
-
-            //     .name {
-            //         font-size: 17px;
-            //     }
-
-            // }
         }
 
         .maps-btn {
@@ -218,65 +168,51 @@
         }
 
         @media (max-width: 1282px) {
-            .logo {
-                img {
-                    max-width: calc((116 / 1282) * 100vw);
-                }
+            .logo img {
+                max-width: calc((171 / 1282) * 100vw);
             }
 
-            .invite-text {
-                font-size: calc((14 / 1282) * 100vw);
-            }
-
-            .couple-image {
-                img {
-                    max-width: calc((210 / 1282) * 100vw);
-                }
+            .eyebrow {
+                font-size: calc((15 / 1282) * 100vw);
             }
 
             .names {
-                .name {
-                    font-size: calc((29 / 1282) * 100vw);
-                }
-
-                .and {
-                    font-size: calc((16 / 1282) * 100vw);
-                }
+                font-size: calc((75 / 1282) * 100vw);
             }
 
-            .divider {
-                img {
-                    max-width: calc((42 / 1282) * 100vw);
-                }
-            }
-
+            .event-label,
+            .event-date,
+            .event-time,
             .venue {
+                font-size: calc((24 / 1282) * 100vw);
+            }
 
-                .venue-label,
-                .date-time,
-                .time-label {
-                    font-size: calc((14 / 1282) * 100vw);
+            .description {
+                font-size: calc((17 / 1282) * 100vw);
+            }
+
+            .section-gap {
+                font-size: calc((23 / 1282) * 100vw);
+            }
+
+            .timeline-badge {
+                max-width: calc((163 / 1282) * 100vw);
+            }
+
+            .timeline .item {
+                .icon img {
+                    max-width: calc((45 / 1282) * 100vw);
                 }
 
-                .venue-name {
-                    font-size: calc((25 / 1282) * 100vw);
-                }
-
-                .venue-address {
-                    font-size: calc((14 / 1282) * 100vw);
-                }
-
-                .divider-diamond {
-                    img {
-                        max-width: calc((10 / 1282) * 100vw);
-                    }
+                .time,
+                .name {
+                    font-size: calc((19 / 1282) * 100vw);
                 }
             }
 
-            .map-btn {
+            .maps-btn {
                 font-size: calc((17 / 1282) * 100vw);
                 max-width: calc((278 / 1282) * 100vw);
-                border-radius: calc((18 / 1282) * 100vw);
             }
         }
     }

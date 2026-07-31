@@ -194,6 +194,59 @@
                     }
                 }
             }
+
+            @media (max-width: 1282px) {
+                .box-1 {
+                    .slider-box {
+                        .title {
+                            font-size: calc((51 / 1282) * 100vw);
+                        }
+
+                        .slider {
+                            width: calc((407 / 1282) * 100vw);
+                        }
+                    }
+
+                    .faq-box {
+                        .title {
+                            font-size: calc((32 / 1282) * 100vw);
+                        }
+
+                        .faq-container {
+                            max-width: calc((480 / 1282) * 100vw);
+
+                            .faq-item {
+                                .faq-header {
+                                    font-size: calc((20 / 1282) * 100vw);
+
+                                    .icon {
+                                        font-size: calc((26 / 1282) * 100vw);
+                                    }
+                                }
+
+                                .faq-content p {
+                                    font-size: calc((20 / 1282) * 100vw);
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                .box-2 {
+                    .subtext {
+                        font-size: calc((20 / 1282) * 100vw);
+
+                        span {
+                            font-size: calc((22 / 1282) * 100vw);
+                        }
+                    }
+
+                    .divider img {
+                        max-width: calc((88 / 1282) * 100vw);
+                    }
+                }
+            }
         }
     }
 }

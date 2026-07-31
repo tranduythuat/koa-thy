@@ -31,5 +31,19 @@
             padding: 0 12%;
             text-align: center;
         }
+
+        @media (max-width: 1282px) {
+            .logo img {
+                max-width: calc((125 / 1282) * 100vw);
+            }
+
+            .title {
+                font-size: calc((38 / 1282) * 100vw);
+            }
+
+            .subtext {
+                font-size: calc((22 / 1282) * 100vw);
+            }
+        }
     }
 }

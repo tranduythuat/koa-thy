@@ -97,5 +97,44 @@
             }
         }
 
+        @media (max-width: 1282px) {
+            .divider img {
+                max-width: calc((128 / 1282) * 100vw);
+            }
+
+            .title {
+                font-size: calc((56 / 1282) * 100vw);
+            }
+
+            .subtext {
+                font-size: calc((20 / 1282) * 100vw);
+            }
+
+            .guide {
+
+                .title {
+                    font-size: calc((32 / 1282) * 100vw);
+                }
+
+                .faq-container {
+                    max-width: calc((760 / 1282) * 100vw);
+
+                    .faq-item {
+                        .faq-header {
+                            font-size: calc((20 / 1282) * 100vw);
+
+                            .icon {
+                                font-size: calc((30 / 1282) * 100vw);
+                            }
+                        }
+
+                        .faq-content p {
+                            font-size: calc((20 / 1282) * 100vw);
+                        }
+                    }
+                }
+
+            }
+        }
     }
 }
