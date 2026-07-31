@@ -225,7 +225,7 @@
             padding: 20% 0 13%;
 
             .logo {
-                top: -5.2%;
+                top: -3.2%;
 
                 img {
                     max-width: calc((125 / 600) * 100vw);
@@ -242,7 +242,8 @@
             }
 
             .divider {
-                margin-bottom: 4%;
+                margin-bottom: 6%;
+                margin-top: 6%;
             }
 
             .event-label,
@@ -255,7 +256,7 @@
 
             .description {
                 font-size: calc((24 / 600) * 100vw);
-                margin: 0 4%;
+                margin: 0 3%;
             }
 
             .section-gap {

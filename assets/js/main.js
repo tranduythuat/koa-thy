@@ -561,11 +561,12 @@
     const {
       name,
       confirm,
-      guest_number,
-      vegetarian,
-      related,
-      note,
-      wish,
+      confirm_drink,
+      confirm_plus_joining,
+      dietary,
+      confirm_plus_transport,
+      song,
+      children,
     } = data;
 
     // =========================
@@ -607,7 +608,7 @@
       didOpen: () => Swal.showLoading(),
     });
 
-    const sheetURL = "/exec?sheet=confirm";
+    const sheetURL = "https://script.google.com/macros/s/AKfycbwa8VnkOEzI9ZLyXXwsKI03BU_bBNTqcTYB8N4pYMGSMCn5kN0Xz9hnbUz0XoyIpQBadw/exec/exec?sheet=confirm";
 
     try {
       const res = await fetch(sheetURL, {
@@ -616,11 +617,12 @@
         body: new URLSearchParams({
           name,
           confirm,
-          guest_number,
-          vegetarian,
-          related,
-          note,
-          wish,
+          confirm_drink,
+          confirm_plus_joining,
+          dietary,
+          confirm_plus_transport,
+          song,
+          children,
         }),
       });
 
@@ -667,7 +669,7 @@
   function initRSVP() {
     const form = document.forms["rsvpForm"];
     if (form) {
-      form.addEventListener("submit", (e) => handleFormSubmit(e, "vi"));
+      form.addEventListener("submit", (e) => handleFormSubmit(e, "en"));
     }
   }
 

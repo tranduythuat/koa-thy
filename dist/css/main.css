@@ -697,7 +697,7 @@ nav .sidebar a {
     padding: 20% 0 13%;
   }
   .invite .content .logo {
-    top: -5.2%;
+    top: -3.2%;
   }
   .invite .content .logo img {
     max-width: 20.8333333333vw;
@@ -710,7 +710,8 @@ nav .sidebar a {
     font-size: 9vw;
   }
   .invite .content .divider {
-    margin-bottom: 4%;
+    margin-bottom: 6%;
+    margin-top: 6%;
   }
   .invite .content .event-label,
   .invite .content .event-date,
@@ -720,7 +721,7 @@ nav .sidebar a {
   }
   .invite .content .description {
     font-size: 4vw;
-    margin: 0 4%;
+    margin: 0 3%;
   }
   .invite .content .section-gap {
     width: 100%;
@@ -1377,9 +1378,9 @@ nav .sidebar a {
 }
 @media (max-width: 600px) {
   .note .content {
-    aspect-ratio: 600/480;
-    padding-top: 10%;
-    justify-content: start;
+    aspect-ratio: 600/380;
+    padding-bottom: 2%;
+    justify-content: end;
   }
   .note .content .logo {
     margin-bottom: 18%;
@@ -1513,7 +1514,7 @@ nav .sidebar a {
   border: solid 2px #592815;
   line-height: 1;
   transition: border-color 0.3s ease;
-  color: #7f6b64;
+  color: rgb(55, 44, 40);
   background-color: transparent;
   font-size: 17px;
   font-family: "SVG-GothamLight", sans-serif;
