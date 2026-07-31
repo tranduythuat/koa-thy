@@ -9,8 +9,10 @@
         aspect-ratio: 1282 / 772;
         background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/koa-thy/note_bg.jpg') no-repeat center / cover;
         color: #faf7f2ff;
-        @include flex-center;
+        display: flex;
+        justify-content: end;
         flex-direction: column;
+        padding-bottom: 4%;
 
         .logo {
             margin-bottom: 11%;
