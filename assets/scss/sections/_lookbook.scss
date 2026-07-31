@@ -7,7 +7,7 @@
     .content {
         width: 100%;
         aspect-ratio: 1282 / 1456;
-        background: url('../../assets/images/travel_guide_bg_bt.png') no-repeat bottom / contain, url('../../assets/images/base_bg.png') repeat center / contain;
+        background: url('../../assets/images/travel_guide_bg_bt.png') no-repeat bottom / contain, url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/koa-thy/base_bg.png') repeat center / contain;
 
         .title {
             font-family: $font-AstonScriptBold;
@@ -64,7 +64,7 @@
         .bottom-img {
             width: 100%;
             aspect-ratio: 1282 / 700;
-            background: url('../../assets/images/lookbook_img_cottom.jpg') no-repeat center / cover;
+            background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/koa-thy/lookbook_img_cottom.jpg') no-repeat center / cover;
         }
 
         @media (max-width: 1282px) {
