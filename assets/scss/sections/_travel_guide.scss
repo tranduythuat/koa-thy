@@ -138,18 +138,18 @@
         }
 
         @media (max-width: 600px) {
-            aspect-ratio: 600 / 1155;
+            aspect-ratio: 600 / 1455;
 
             .divider img {
                 max-width: calc((85 / 600) * 100vw);
             }
 
             .title {
-                font-size: calc((37 / 600) * 100vw);
+                font-size: calc((41 / 600) * 100vw);
             }
 
             .subtext {
-                font-size: calc((14 / 600) * 100vw);
+                font-size: calc((17 / 600) * 100vw);
             }
 
             .guide {
@@ -158,15 +158,15 @@
 
                     .faq-item {
                         .faq-header {
-                            font-size: calc((14 / 600) * 100vw);
+                            font-size: calc((26 / 600) * 100vw);
 
                             .icon {
-                                font-size: calc((18 / 600) * 100vw);
+                                font-size: calc((28 / 600) * 100vw);
                             }
                         }
 
                         .faq-content p {
-                            font-size: calc((13 / 600) * 100vw);
+                            font-size: calc((24 / 600) * 100vw);
                         }
                     }
                 }

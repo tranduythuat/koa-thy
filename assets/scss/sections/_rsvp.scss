@@ -285,6 +285,7 @@
                     input[type="number"],
                     textarea {
                         font-size: calc((17 / 1282) * 100vw);
+                        padding: 2%;
                     }
                 }
 
@@ -297,31 +298,32 @@
         }
 
         @media (max-width: 600px) {
-            aspect-ratio: 600 / 1694;
+            aspect-ratio: 600 / 1894;
+            padding: 5% 8% 0%;
 
             .title {
-                font-size: calc((28 / 600) * 100vw);
+                font-size: calc((32 / 600) * 100vw);
             }
 
             .subtext {
-                font-size: calc((10 / 600) * 100vw);
-            }
-
-            .text {
                 font-size: calc((14 / 600) * 100vw);
             }
 
+            .text {
+                font-size: calc((18 / 600) * 100vw);
+            }
+
             .divider img {
-                max-width: calc((92 / 600) * 100vw);
+                max-width: calc((110 / 600) * 100vw);
             }
 
             .rsvp-form {
                 .button-group {
 
                     .radio-label {
-                        font-size: calc((16 / 600) * 100vw);
+                        font-size: calc((18 / 600) * 100vw);
                         border-radius: calc((8 / 600) * 100vw);
-                        padding: 1% 0;
+                        padding: 2% 0;
                         border: solid 1px $text-color;
                     }
                 }
@@ -330,10 +332,11 @@
                     flex-direction: column;
 
                     .subtitle {
-                        font-size: calc((16 / 600) * 100vw);
+                        font-size: calc((20 / 600) * 100vw);
                         width: 100%;
                         border-bottom: none;
                         text-align: center;
+                        margin-bottom: 1%;
                     }
 
                     input[type="text"],
@@ -351,8 +354,8 @@
                 }
 
                 .submit-btn {
-                    width: calc((155 / 600) * 100vw);
-                    font-size: calc((15 / 600) * 100vw);
+                    width: calc((170 / 600) * 100vw);
+                    font-size: calc((19 / 600) * 100vw);
                     border-radius: calc((8 / 600) * 100vw);
                 }
             }

@@ -49,6 +49,10 @@
             font-weight: 300;
         }
 
+        .event-label {
+            font-weight: 600;
+        }
+
         .event-time {
             margin-bottom: 4%;
         }
@@ -217,8 +221,8 @@
         }
 
         @media (max-width: 600px) {
-            aspect-ratio: 600 / 1310;
-            padding: 17% 0 13%;
+            aspect-ratio: 600 / 2000;
+            padding: 20% 0 13%;
 
             .logo {
                 top: -5.2%;
@@ -229,12 +233,12 @@
             }
 
             .eyebrow {
-                font-size: calc((14 / 600) * 100vw);
+                font-size: calc((18 / 600) * 100vw);
             }
 
             .names {
                 margin-top: 5%;
-                font-size: calc((50 / 600) * 100vw);
+                font-size: calc((54 / 600) * 100vw);
             }
 
             .divider {
@@ -245,40 +249,51 @@
             .event-date,
             .event-time,
             .venue {
-                font-size: calc((16 / 600) * 100vw);
+                font-size: calc((20 / 600) * 100vw);
             }
 
             .description {
-                font-size: calc((13 / 600) * 100vw);
+                font-size: calc((20 / 600) * 100vw);
+                margin: 0 4%;
             }
 
             .section-gap {
-                font-size: calc((26 / 600) * 100vw);
+                width: 100%;
+                font-size: calc((30 / 600) * 100vw);
+
+                .venue {
+                    margin-bottom: .5%
+                }
             }
 
             .timeline-badge {
-                max-width: calc((163 / 600) * 100vw);
+                max-width: calc((167 / 600) * 100vw);
 
                 label {
-                    font-size: calc((22 / 600) * 100vw);
+                    font-size: calc((26 / 600) * 100vw);
                 }
             }
 
             .timeline .item {
+                margin-top: 6%;
+
                 .icon img {
-                    max-width: calc((38 / 600) * 100vw);
+                    max-width: calc((50 / 600) * 100vw);
                 }
 
                 .time,
                 .name {
-                    font-size: calc((16 / 600) * 100vw);
+                    font-size: calc((20 / 600) * 100vw);
                 }
+
             }
 
-            .maps-btn {
-                font-size: calc((13 / 600) * 100vw);
-                max-width: calc((196 / 600) * 100vw);
 
+
+            .maps-btn {
+                font-size: calc((16 / 600) * 100vw);
+                max-width: calc((200 / 600) * 100vw);
+                padding: 2% 0;
             }
         }
     }

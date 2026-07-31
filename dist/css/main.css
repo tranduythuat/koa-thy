@@ -543,6 +543,9 @@ nav .sidebar a {
   font-size: 24px;
   font-weight: 300;
 }
+.invite .content .event-label {
+  font-weight: 600;
+}
 .invite .content .event-time {
   margin-bottom: 4%;
 }
@@ -687,8 +690,8 @@ nav .sidebar a {
 }
 @media (max-width: 600px) {
   .invite .content {
-    aspect-ratio: 600/1310;
-    padding: 17% 0 13%;
+    aspect-ratio: 600/2000;
+    padding: 20% 0 13%;
   }
   .invite .content .logo {
     top: -5.2%;
@@ -697,11 +700,11 @@ nav .sidebar a {
     max-width: 20.8333333333vw;
   }
   .invite .content .eyebrow {
-    font-size: 2.3333333333vw;
+    font-size: 3vw;
   }
   .invite .content .names {
     margin-top: 5%;
-    font-size: 8.3333333333vw;
+    font-size: 9vw;
   }
   .invite .content .divider {
     margin-bottom: 4%;
@@ -710,30 +713,39 @@ nav .sidebar a {
   .invite .content .event-date,
   .invite .content .event-time,
   .invite .content .venue {
-    font-size: 2.6666666667vw;
+    font-size: 3.3333333333vw;
   }
   .invite .content .description {
-    font-size: 2.1666666667vw;
+    font-size: 3.3333333333vw;
+    margin: 0 4%;
   }
   .invite .content .section-gap {
-    font-size: 4.3333333333vw;
+    width: 100%;
+    font-size: 5vw;
+  }
+  .invite .content .section-gap .venue {
+    margin-bottom: 0.5%;
   }
   .invite .content .timeline-badge {
-    max-width: 27.1666666667vw;
+    max-width: 27.8333333333vw;
   }
   .invite .content .timeline-badge label {
-    font-size: 3.6666666667vw;
+    font-size: 4.3333333333vw;
+  }
+  .invite .content .timeline .item {
+    margin-top: 6%;
   }
   .invite .content .timeline .item .icon img {
-    max-width: 6.3333333333vw;
+    max-width: 8.3333333333vw;
   }
   .invite .content .timeline .item .time,
   .invite .content .timeline .item .name {
-    font-size: 2.6666666667vw;
+    font-size: 3.3333333333vw;
   }
   .invite .content .maps-btn {
-    font-size: 2.1666666667vw;
-    max-width: 32.6666666667vw;
+    font-size: 2.6666666667vw;
+    max-width: 33.3333333333vw;
+    padding: 2% 0;
   }
 }
 
@@ -945,7 +957,7 @@ nav .sidebar a {
     padding-left: 10%;
   }
   .destination .content .main .box-1 .slider-box .slider {
-    width: 67.8333333333vw;
+    width: 91.6666666667vw;
   }
   .destination .content .main .box-1 .slider-box .slider .main-swiper .swiper-button-next:after,
   .destination .content .main .box-1 .slider-box .slider .main-swiper .swiper-button-prev:after {
@@ -962,22 +974,22 @@ nav .sidebar a {
     margin-top: 10%;
   }
   .destination .content .main .box-1 .faq-box .faq-container .faq-item .faq-header {
-    font-size: 3.5vw;
+    font-size: 4.3333333333vw;
   }
   .destination .content .main .box-1 .faq-box .faq-container .faq-item .faq-header .icon {
-    font-size: 3.6666666667vw;
+    font-size: 4.6666666667vw;
   }
   .destination .content .main .box-1 .faq-box .faq-container .faq-item .faq-content p {
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
   .destination .content .main .box-2 .subtext {
-    font-size: 2.3333333333vw;
-  }
-  .destination .content .main .box-2 .subtext span {
     font-size: 2.6666666667vw;
   }
+  .destination .content .main .box-2 .subtext span {
+    font-size: 3.3333333333vw;
+  }
   .destination .content .main .box-2 .divider img {
-    max-width: 7.3333333333vw;
+    max-width: 8vw;
     margin-bottom: 5%;
   }
 }
@@ -1089,28 +1101,28 @@ nav .sidebar a {
 }
 @media (max-width: 600px) {
   .travel-guide .content {
-    aspect-ratio: 600/1155;
+    aspect-ratio: 600/1455;
   }
   .travel-guide .content .divider img {
     max-width: 14.1666666667vw;
   }
   .travel-guide .content .title {
-    font-size: 6.1666666667vw;
+    font-size: 6.8333333333vw;
   }
   .travel-guide .content .subtext {
-    font-size: 2.3333333333vw;
+    font-size: 2.8333333333vw;
   }
   .travel-guide .content .guide .faq-container {
     max-width: 84.6666666667vw;
   }
   .travel-guide .content .guide .faq-container .faq-item .faq-header {
-    font-size: 2.3333333333vw;
+    font-size: 4.3333333333vw;
   }
   .travel-guide .content .guide .faq-container .faq-item .faq-header .icon {
-    font-size: 3vw;
+    font-size: 4.6666666667vw;
   }
   .travel-guide .content .guide .faq-container .faq-item .faq-content p {
-    font-size: 2.1666666667vw;
+    font-size: 4vw;
   }
 }
 
@@ -1193,8 +1205,8 @@ nav .sidebar a {
 }
 @media (max-width: 600px) {
   .our-story .content {
-    aspect-ratio: 600/1190;
-    padding: 4% 5%;
+    aspect-ratio: 600/1200;
+    padding: 9% 6%;
   }
   .our-story .content .title {
     font-size: 8.6666666667vw;
@@ -1300,7 +1312,7 @@ nav .sidebar a {
 }
 @media (max-width: 600px) {
   .lookbook .content .title {
-    font-size: 4.3333333333vw;
+    font-size: 4.6666666667vw;
   }
   .lookbook .content .slider-box .swiper {
     width: 85.3333333333vw;
@@ -1312,7 +1324,7 @@ nav .sidebar a {
     font-size: 4.3333333333vw;
   }
   .lookbook .content .text {
-    font-size: 2vw;
+    font-size: 2.3333333333vw;
   }
 }
 
@@ -1361,10 +1373,10 @@ nav .sidebar a {
     max-width: 10vw;
   }
   .note .content .title {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .note .content .subtext {
-    font-size: 1.8333333333vw;
+    font-size: 2.3333333333vw;
   }
 }
 
@@ -1588,6 +1600,7 @@ nav .sidebar a {
   .rsvp .content .rsvp-form .form-group input[type=number],
   .rsvp .content .rsvp-form .form-group textarea {
     font-size: 1.3260530421vw;
+    padding: 2%;
   }
   .rsvp .content .rsvp-form .submit-btn {
     width: 15.1326053042vw;
@@ -1596,34 +1609,36 @@ nav .sidebar a {
 }
 @media (max-width: 600px) {
   .rsvp .content {
-    aspect-ratio: 600/1694;
+    aspect-ratio: 600/1894;
+    padding: 5% 8% 0%;
   }
   .rsvp .content .title {
-    font-size: 4.6666666667vw;
+    font-size: 5.3333333333vw;
   }
   .rsvp .content .subtext {
-    font-size: 1.6666666667vw;
-  }
-  .rsvp .content .text {
     font-size: 2.3333333333vw;
   }
+  .rsvp .content .text {
+    font-size: 3vw;
+  }
   .rsvp .content .divider img {
-    max-width: 15.3333333333vw;
+    max-width: 18.3333333333vw;
   }
   .rsvp .content .rsvp-form .button-group .radio-label {
-    font-size: 2.6666666667vw;
+    font-size: 3vw;
     border-radius: 1.3333333333vw;
-    padding: 1% 0;
+    padding: 2% 0;
     border: solid 1px #592815;
   }
   .rsvp .content .rsvp-form .form-group {
     flex-direction: column;
   }
   .rsvp .content .rsvp-form .form-group .subtitle {
-    font-size: 2.6666666667vw;
+    font-size: 3.3333333333vw;
     width: 100%;
     border-bottom: none;
     text-align: center;
+    margin-bottom: 1%;
   }
   .rsvp .content .rsvp-form .form-group input[type=text],
   .rsvp .content .rsvp-form .form-group input[type=number],
@@ -1637,8 +1652,8 @@ nav .sidebar a {
     width: 100%;
   }
   .rsvp .content .rsvp-form .submit-btn {
-    width: 25.8333333333vw;
-    font-size: 2.5vw;
+    width: 28.3333333333vw;
+    font-size: 3.1666666667vw;
     border-radius: 1.3333333333vw;
   }
 }
