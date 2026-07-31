@@ -25,5 +25,17 @@
                 max-width: calc((847 / 1282) * 100vw);
             }
         }
+
+        @media (max-width: 600px) {
+            aspect-ratio: 600 / 950;
+            background: url('../../assets/images/hero_bg.png') no-repeat bottom / 180%,
+                url('../../assets/images/base_bg.png') no-repeat center / cover;
+
+            img.text-img-01 {
+                max-width: calc((452 / 600) * 100vw);
+                margin-top: 45%;
+            }
+        }
     }
+
 }

@@ -123,6 +123,7 @@
                         max-width: 480px;
                         width: 100%;
                         margin-top: 94%;
+                        overflow: auto;
 
                         .faq-item {
                             // border: 2px solid $text-color;
@@ -208,10 +209,6 @@
                     }
 
                     .faq-box {
-                        .title {
-                            font-size: calc((32 / 1282) * 100vw);
-                        }
-
                         .faq-container {
                             max-width: calc((480 / 1282) * 100vw);
 
@@ -244,6 +241,74 @@
 
                     .divider img {
                         max-width: calc((88 / 1282) * 100vw);
+                    }
+                }
+            }
+
+            @media (max-width: 600px) {
+
+                aspect-ratio: 600 / 1850;
+
+                .box-1 {
+                    flex-direction: column;
+
+                    .slider-box {
+                        width: 100%;
+                        padding-left: 0;
+
+                        .title {
+                            font-size: calc((26 / 600) * 100vw);
+                            margin: 15% 0;
+                            margin-right: auto;
+                            padding-left: 10%;
+
+                        }
+
+                        .slider {
+                            width: calc((407 / 600) * 100vw);
+                        }
+                    }
+
+                    .faq-box {
+                        width: 100%;
+                        padding-right: 0;
+                        margin-top: 5%;
+                        overflow: scroll;
+
+                        .faq-container {
+                            max-width: calc((515 / 600) * 100vw);
+                            margin-top: 10%;
+
+                            .faq-item {
+                                .faq-header {
+                                    font-size: calc((21/ 600) * 100vw);
+
+                                    .icon {
+                                        font-size: calc((22 / 600) * 100vw);
+                                    }
+                                }
+
+                                .faq-content p {
+                                    font-size: calc((21 / 600) * 100vw);
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                .box-2 {
+                    .subtext {
+                        font-size: calc((14 / 600) * 100vw);
+
+                        span {
+                            font-size: calc((16 / 600) * 100vw);
+                        }
+                    }
+
+                    .divider img {
+                        max-width: calc((44 / 600) * 100vw);
+                        margin-bottom: 5%;
                     }
                 }
             }

@@ -93,5 +93,47 @@
                 max-width: calc((261 / 1282) * 100vw);
             }
         }
+
+        @media (max-width: 600px) {
+            aspect-ratio: 600 / 1190;
+            padding: 4% 5%;
+
+            .title {
+                font-size: calc((52 / 600) * 100vw);
+            }
+
+            .text {
+                font-size: calc((14 / 600) * 100vw);
+            }
+
+            .group-img {
+                flex-wrap: wrap;
+
+                img {
+                    max-width: calc((267 / 600) * 100vw);
+
+                    &.couple-1 {
+                        top: 4%;
+                    }
+
+                    &.couple-2 {
+                        top: 21%;
+                    }
+
+                    &.couple-3 {
+                        top: 9%;
+                    }
+
+                    &.couple-4 {
+                        top: 26%;
+                    }
+                }
+            }
+
+
+            &::before {
+                transform: scale(1);
+            }
+        }
     }
 }

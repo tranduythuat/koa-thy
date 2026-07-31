@@ -74,7 +74,7 @@
 
             .slider-box {
                 .swiper {
-                    width: calc((85 / 100) * 100vw);
+                    width: calc((85 / 1282) * 100vw);
                 }
 
                 .swiper-slide {
@@ -88,6 +88,30 @@
 
             .text {
                 font-size: calc((20 / 1282) * 100vw);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .title {
+                font-size: calc((26 / 600) * 100vw);
+            }
+
+            .slider-box {
+                .swiper {
+                    width: calc((512 / 600) * 100vw);
+                }
+
+                .swiper-slide {
+                    max-width: calc((162 / 600) * 100vw);
+                }
+            }
+
+            .subtitle {
+                font-size: calc((26 / 600) * 100vw);
+            }
+
+            .text {
+                font-size: calc((12 / 600) * 100vw);
             }
         }
     }

@@ -215,5 +215,70 @@
                 max-width: calc((278 / 1282) * 100vw);
             }
         }
+
+        @media (max-width: 600px) {
+            aspect-ratio: 600 / 1310;
+            padding: 17% 0 13%;
+
+            .logo {
+                top: -5.2%;
+
+                img {
+                    max-width: calc((113 / 600) * 100vw);
+                }
+            }
+
+            .eyebrow {
+                font-size: calc((9.7 / 600) * 100vw);
+            }
+
+            .names {
+                margin-top: 5%;
+                font-size: calc((50 / 600) * 100vw);
+            }
+
+            .divider {
+                margin-bottom: 4%;
+            }
+
+            .event-label,
+            .event-date,
+            .event-time,
+            .venue {
+                font-size: calc((13 / 600) * 100vw);
+            }
+
+            .description {
+                font-size: calc((11 / 600) * 100vw);
+            }
+
+            .section-gap {
+                font-size: calc((23 / 600) * 100vw);
+            }
+
+            .timeline-badge {
+                max-width: calc((163 / 600) * 100vw);
+
+                label {
+                    font-size: calc((16 / 600) * 100vw);
+                }
+            }
+
+            .timeline .item {
+                .icon img {
+                    max-width: calc((32 / 600) * 100vw);
+                }
+
+                .time,
+                .name {
+                    font-size: calc((12 / 600) * 100vw);
+                }
+            }
+
+            .maps-btn {
+                font-size: calc((11 / 600) * 100vw);
+                max-width: calc((184 / 600) * 100vw);
+            }
+        }
     }
 }

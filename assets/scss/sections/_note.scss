@@ -45,5 +45,19 @@
                 font-size: calc((22 / 1282) * 100vw);
             }
         }
+
+        @media (max-width: 600px) {
+            .logo img {
+                max-width: calc((60 / 600) * 100vw);
+            }
+
+            .title {
+                font-size: calc((18 / 600) * 100vw);
+            }
+
+            .subtext {
+                font-size: calc((11 / 600) * 100vw);
+            }
+        }
     }
 }

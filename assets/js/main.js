@@ -9,6 +9,8 @@
   const qsa = (selector, parent = document) =>
     parent.querySelectorAll(selector);
 
+  let currentHeight = 95;
+
   /* ======================================================
        SWIPER
     ====================================================== */
@@ -684,10 +686,25 @@
   function initClickScrollMenu() {
     const menus = document.querySelectorAll('.menu-items');
     const nav = document.querySelector('nav');
-    // const offset = nav ? nav.getBoundingClientRect().height : 95;
-    const offset = 95;
 
-    console.log('--- DATA offset ---', offset);
+    if (!nav) return;
+
+    const getOffset = () => {
+      const navHeight = nav.getBoundingClientRect().height || 95;
+      const computedStyle = window.getComputedStyle(nav);
+      const marginTop = parseFloat(computedStyle.marginTop) || 0;
+      const marginBottom = parseFloat(computedStyle.marginBottom) || 0;
+
+      return Math.round(navHeight + marginTop + marginBottom);
+    };
+
+    const updateOffset = () => {
+      currentHeight = getOffset();
+    };
+
+    updateOffset();
+    window.addEventListener('scroll', updateOffset, { passive: true });
+    window.addEventListener('resize', updateOffset, { passive: true });
 
     menus.forEach((menu) => {
       menu.querySelectorAll('a[href^="#"]').forEach(link => {
@@ -703,6 +720,7 @@
           const targetEl = document.querySelector(targetId);
 
           if (targetEl) {
+            const offset = getOffset();
             const targetPosition = targetEl.getBoundingClientRect().top + window.scrollY - offset;
 
             window.scrollTo({
@@ -767,6 +785,13 @@
     });
   }
 
+  function updateHeight() {
+    const myDiv = qs("#navbar");
+    if (myDiv) {
+      currentHeight = myDiv.offsetHeight;
+    }
+  }
+
   /* ======================================================
        BOOTSTRAP
     ====================================================== */
@@ -786,6 +811,5 @@
     initClickScrollMenu();
     // startCountdown(new Date("2026-03-06T16:00:00"));
   }
-
   document.addEventListener("DOMContentLoaded", init);
 })();

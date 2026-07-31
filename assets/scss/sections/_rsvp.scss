@@ -275,6 +275,8 @@
                 }
 
                 .form-group {
+                    margin-bottom: 5%;
+
                     .subtitle {
                         font-size: calc((20 / 1282) * 100vw);
                     }
@@ -290,6 +292,68 @@
                 .submit-btn {
                     width: calc((194 / 1282) * 100vw);
                     font-size: calc((20 / 1282) * 100vw);
+                }
+            }
+        }
+
+        @media (max-width: 600px) {
+            aspect-ratio: 600 / 1694;
+
+            .title {
+                font-size: calc((28 / 600) * 100vw);
+            }
+
+            .subtext {
+                font-size: calc((10 / 600) * 100vw);
+            }
+
+            .text {
+                font-size: calc((14 / 600) * 100vw);
+            }
+
+            .divider img {
+                max-width: calc((92 / 600) * 100vw);
+            }
+
+            .rsvp-form {
+                .button-group {
+
+                    .radio-label {
+                        font-size: calc((16 / 600) * 100vw);
+                        border-radius: calc((8 / 600) * 100vw);
+                        padding: 1% 0;
+                        border: solid 1px $text-color;
+                    }
+                }
+
+                .form-group {
+                    flex-direction: column;
+
+                    .subtitle {
+                        font-size: calc((16 / 600) * 100vw);
+                        width: 100%;
+                        border-bottom: none;
+                        text-align: center;
+                    }
+
+                    input[type="text"],
+                    input[type="number"],
+                    textarea {
+                        font-size: calc((17 / 600) * 100vw);
+                        width: 100%;
+                        border-radius: calc((8 / 600) * 100vw);
+                        border: solid 1px $text-color;
+                    }
+
+                    .button-group {
+                        width: 100%;
+                    }
+                }
+
+                .submit-btn {
+                    width: calc((155 / 600) * 100vw);
+                    font-size: calc((15 / 600) * 100vw);
+                    border-radius: calc((8 / 600) * 100vw);
                 }
             }
         }
