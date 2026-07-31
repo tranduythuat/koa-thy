@@ -482,7 +482,7 @@ nav .sidebar a {
 .invite .content .event-date,
 .invite .content .event-time,
 .invite .content .venue {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 300;
 }
 .invite .content .event-time {
@@ -521,7 +521,7 @@ nav .sidebar a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10% 0 4%;
+  margin: 10% 0 5%;
 }
 .invite .content .timeline-badge label {
   font-size: 24px;
@@ -555,11 +555,11 @@ nav .sidebar a {
 }
 .invite .content .timeline .item .time {
   margin-bottom: 10px;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 600;
 }
 .invite .content .timeline .item .name {
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.5;
   font-weight: 600;
 }
@@ -898,7 +898,7 @@ nav .sidebar a {
   width: 100%;
 }
 .our-story .content .text p {
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 .our-story .content .group-img {
   margin: auto;
@@ -919,7 +919,7 @@ nav .sidebar a {
   top: 10%;
 }
 .our-story .content .group-img img.couple-2 {
-  top: 30%;
+  top: 27%;
 }
 .our-story .content .group-img img.couple-3 {
   top: -5%;
@@ -978,7 +978,7 @@ nav .sidebar a {
   color: #fffffe;
 }
 .lookbook .content .subtitle {
-  font-size: 38px;
+  font-size: 34px;
   margin: 4%;
 }
 .lookbook .content .text {

@@ -45,7 +45,7 @@
         .event-date,
         .event-time,
         .venue {
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 300;
         }
 
@@ -89,7 +89,7 @@
             width: 100%;
             position: relative;
             @include flex-center;
-            margin: 10% 0 4%;
+            margin: 10% 0 5%;
 
             label {
                 font-size: 24px;
@@ -126,12 +126,12 @@
 
                 .time {
                     margin-bottom: 10px;
-                    font-size: 17px;
+                    font-size: 19px;
                     font-weight: 600;
                 }
 
                 .name {
-                    font-size: 17px;
+                    font-size: 19px;
                     line-height: 1.5;
                     font-weight: 600;
 
