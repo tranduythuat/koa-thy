@@ -249,11 +249,11 @@
             .event-date,
             .event-time,
             .venue {
-                font-size: calc((20 / 600) * 100vw);
+                font-size: calc((24 / 600) * 100vw);
             }
 
             .description {
-                font-size: calc((20 / 600) * 100vw);
+                font-size: calc((24 / 600) * 100vw);
                 margin: 0 4%;
             }
 
@@ -278,12 +278,12 @@
                 margin-top: 6%;
 
                 .icon img {
-                    max-width: calc((50 / 600) * 100vw);
+                    max-width: calc((54 / 600) * 100vw);
                 }
 
                 .time,
                 .name {
-                    font-size: calc((20 / 600) * 100vw);
+                    font-size: calc((24 / 600) * 100vw);
                 }
 
             }
@@ -291,9 +291,9 @@
 
 
             .maps-btn {
-                font-size: calc((16 / 600) * 100vw);
-                max-width: calc((200 / 600) * 100vw);
-                padding: 2% 0;
+                font-size: calc((24 / 600) * 100vw);
+                max-width: calc((240 / 600) * 100vw);
+                padding: 3% 0;
             }
         }
     }

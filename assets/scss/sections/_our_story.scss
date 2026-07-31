@@ -95,15 +95,19 @@
         }
 
         @media (max-width: 600px) {
-            aspect-ratio: 600 / 1200;
+            aspect-ratio: 600 / 1400;
             padding: 9% 6%;
 
             .title {
-                font-size: calc((52 / 600) * 100vw);
+                font-size: calc((44 / 600) * 100vw);
             }
 
             .text {
-                font-size: calc((14 / 600) * 100vw);
+                font-size: calc((24 / 600) * 100vw);
+
+                p {
+                    margin-bottom: 2%;
+                }
             }
 
             .group-img {

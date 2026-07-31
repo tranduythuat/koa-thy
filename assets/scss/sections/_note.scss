@@ -47,16 +47,26 @@
         }
 
         @media (max-width: 600px) {
-            .logo img {
-                max-width: calc((60 / 600) * 100vw);
+            aspect-ratio: 600 / 480;
+            padding-top: 10%;
+            justify-content: start;
+
+            .logo {
+                margin-bottom: 15%;
+
+                img {
+                    max-width: calc((85 / 600) * 100vw);
+                }
             }
 
             .title {
-                font-size: calc((24 / 600) * 100vw);
+                font-size: calc((34 / 600) * 100vw);
+                margin-bottom: 2%;
             }
 
             .subtext {
-                font-size: calc((14 / 600) * 100vw);
+                font-size: calc((24 / 600) * 100vw);
+                padding: 0 5%;
             }
         }
     }

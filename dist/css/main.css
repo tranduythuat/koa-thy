@@ -447,7 +447,7 @@ nav .sidebar a {
     max-width: 18.3333333333vw;
   }
   nav a {
-    font-size: 1.9166666667vw;
+    font-size: 2.6666666667vw;
   }
 }
 
@@ -713,10 +713,10 @@ nav .sidebar a {
   .invite .content .event-date,
   .invite .content .event-time,
   .invite .content .venue {
-    font-size: 3.3333333333vw;
+    font-size: 4vw;
   }
   .invite .content .description {
-    font-size: 3.3333333333vw;
+    font-size: 4vw;
     margin: 0 4%;
   }
   .invite .content .section-gap {
@@ -736,16 +736,16 @@ nav .sidebar a {
     margin-top: 6%;
   }
   .invite .content .timeline .item .icon img {
-    max-width: 8.3333333333vw;
+    max-width: 9vw;
   }
   .invite .content .timeline .item .time,
   .invite .content .timeline .item .name {
-    font-size: 3.3333333333vw;
+    font-size: 4vw;
   }
   .invite .content .maps-btn {
-    font-size: 2.6666666667vw;
-    max-width: 33.3333333333vw;
-    padding: 2% 0;
+    font-size: 4vw;
+    max-width: 40vw;
+    padding: 3% 0;
   }
 }
 
@@ -1205,14 +1205,17 @@ nav .sidebar a {
 }
 @media (max-width: 600px) {
   .our-story .content {
-    aspect-ratio: 600/1200;
+    aspect-ratio: 600/1400;
     padding: 9% 6%;
   }
   .our-story .content .title {
-    font-size: 8.6666666667vw;
+    font-size: 7.3333333333vw;
   }
   .our-story .content .text {
-    font-size: 2.3333333333vw;
+    font-size: 4vw;
+  }
+  .our-story .content .text p {
+    margin-bottom: 2%;
   }
   .our-story .content .group-img {
     flex-wrap: wrap;
@@ -1324,7 +1327,8 @@ nav .sidebar a {
     font-size: 4.3333333333vw;
   }
   .lookbook .content .text {
-    font-size: 2.3333333333vw;
+    font-size: 4vw;
+    padding: 0 6% 5%;
   }
 }
 
@@ -1369,14 +1373,24 @@ nav .sidebar a {
   }
 }
 @media (max-width: 600px) {
+  .note .content {
+    aspect-ratio: 600/480;
+    padding-top: 10%;
+    justify-content: start;
+  }
+  .note .content .logo {
+    margin-bottom: 15%;
+  }
   .note .content .logo img {
-    max-width: 10vw;
+    max-width: 14.1666666667vw;
   }
   .note .content .title {
-    font-size: 4vw;
+    font-size: 5.6666666667vw;
+    margin-bottom: 2%;
   }
   .note .content .subtext {
-    font-size: 2.3333333333vw;
+    font-size: 4vw;
+    padding: 0 5%;
   }
 }
 
