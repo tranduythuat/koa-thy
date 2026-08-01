@@ -150,12 +150,12 @@ section {
   width: 100%;
   text-align: left;
   font-size: 12px;
-  background-color: #efc8c8;
-  padding: 4% 15%;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  background-color: #592815;
+  padding: 10% 8%;
+  border-radius: 25px;
   border: 1px solid rgba(48, 44, 42, 0.124);
   opacity: 0.9;
+  color: white;
 }
 .music-box .player {
   max-width: 55px;
@@ -176,17 +176,19 @@ section {
   .container {
     font-size: 0.8580343214vw;
   }
+}
+@media (max-width: 600px) {
   .music-box {
-    bottom: 0.7800312012vw;
+    bottom: 1.6666666667vw;
   }
   .music-box .label {
-    max-width: 23.4009360374vw;
+    max-width: 50vw;
   }
   .music-box .label .musicLabel {
-    font-size: 0.9360374415vw;
+    font-size: 2vw;
   }
   .music-box .player {
-    max-width: 4.2901716069vw;
+    max-width: 9.1666666667vw;
   }
 }
 .spin {

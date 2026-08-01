@@ -562,7 +562,6 @@
       name,
       confirm,
       confirm_drink,
-      confirm_plus_joining,
       dietary,
       confirm_plus_transport,
       song,
@@ -618,7 +617,6 @@
           name,
           confirm,
           confirm_drink,
-          confirm_plus_joining,
           dietary,
           confirm_plus_transport,
           song,
@@ -804,7 +802,7 @@
     // initLetterAnimation();
     initAnimations();
     initSwiper();
-    // initMusic();
+    initMusic();
     initDresscodeAnimation();
     initTimeline();
     initFAQ();
