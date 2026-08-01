@@ -73,6 +73,7 @@
     let isOpen = true
 
     if (!audio || !icon || !btn || !label) return;
+    audio.volume = 0.3
 
     // 👉 GSAP timeline cho label
     const tl = gsap.timeline({ paused: true });
