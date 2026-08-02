@@ -565,6 +565,7 @@
       confirm_drink,
       dietary,
       confirm_plus_transport,
+      flight_number,
       song,
       children,
     } = data;
@@ -620,6 +621,7 @@
           confirm_drink,
           dietary,
           confirm_plus_transport,
+          flight_number,
           song,
           children,
         }),

@@ -115,6 +115,10 @@
                     text-align: left;
                     border-bottom: 2px solid $text-color;
                     line-height: 2;
+
+                    i {
+                        font-size: 14px;
+                    }
                 }
 
                 .button-group,
@@ -337,6 +341,10 @@
                         border-bottom: none;
                         text-align: center;
                         margin-bottom: 1%;
+
+                        i {
+                            font-size: calc((16 / 600) * 100vw);
+                        }
                     }
 
                     input[type="text"],
